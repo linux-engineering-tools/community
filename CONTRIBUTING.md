@@ -6,7 +6,7 @@ Agents: start at [`AGENTS.md`](AGENTS.md) and the matching skill under `agents/s
 
 ## File a requirement
 
-Use the **Requirement** issue form. A useful requirement states:
+Use the **Requirement** issue form. Accepted items show up on the [Requirements project](https://github.com/orgs/linux-engineering-tools/projects/1). A useful requirement states:
 
 - Who needs it and what job they are doing
 - Inputs and outputs, named as **open or published standards** (file formats, ISO/ASME/IEC/IPC numbers, G-code dialects)
