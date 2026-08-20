@@ -1,0 +1,49 @@
+name: RFC
+description: Propose incubating a new LET repo, or a process change. Requirements use the other form.
+title: "[rfc] "
+labels: ["type:rfc", "status:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for **incubation** or **process**. For a user-facing capability, use the Requirement form instead. Read [GOVERNANCE.md](../blob/main/GOVERNANCE.md).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Incubate a new tool repo
+        - Process / docs / skills
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should change and why. Capability language only.
+    validations:
+      required: true
+  - type: textarea
+    id: upstream
+    attributes:
+      label: Upstream check
+      description: For a new tool, which existing project was considered, what you asked them, and what they said. Required for incubation.
+    validations:
+      required: true
+  - type: textarea
+    id: spec
+    attributes:
+      label: Spec
+      description: Link to specs/… or paste a first draft (standards, CLI, tests, Omarchy/Wayland if GUI).
+    validations:
+      required: true
+  - type: checkboxes
+    id: clean-room
+    attributes:
+      label: Clean-room
+      options:
+        - label: This RFC does not specify a clone of a commercial product and contains no proprietary material.
+          required: true
+        - label: I will follow DCO and the PR template if this produces code.
+          required: true

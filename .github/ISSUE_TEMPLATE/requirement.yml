@@ -1,0 +1,119 @@
+name: Requirement
+description: Request an engineering capability. Describe the job, not a product to copy.
+title: "[req] "
+labels: ["type:requirement", "status:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) first. Describe a **job to be done** with open standards and tests. Do not specify a clone of a commercial product.
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      options:
+        - cad
+        - cam
+        - fea
+        - cfd
+        - eda
+        - pdm
+        - interop
+        - drawings
+        - scientific
+        - civil
+        - desktop
+        - other
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: User role
+      options:
+        - Mechanical engineer
+        - Electrical / electronics engineer
+        - Manufacturing / CNC
+        - Civil / structural
+        - Student
+        - Researcher
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: job
+    attributes:
+      label: Job to be done
+      description: Who needs this, how often, and what they are trying to finish. No commercial feature names.
+      placeholder: "Example: Produce a dimensioned manufacturing drawing from a parametric solid that still updates when the solid changes."
+    validations:
+      required: true
+  - type: textarea
+    id: io
+    attributes:
+      label: Inputs, outputs, and standards
+      description: File formats and published standard numbers (ISO, ASME, IEC, IPC, STEP AP, G-code dialect). Not vendor file formats unless they are published specs.
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Acceptance tests
+      description: Observable checks that would make this requirement done. Prefer fixtures and CLI output over GUI clicks.
+    validations:
+      required: true
+  - type: textarea
+    id: existing
+    attributes:
+      label: Existing FOSS considered
+      description: What you already tried (see catalog/README.md) and why it does not meet the tests. Prefer upstream contribution when it would.
+    validations:
+      required: true
+  - type: dropdown
+    id: preference
+    attributes:
+      label: Preferred home
+      options:
+        - Contribute upstream to an existing project
+        - New LET tool (explain why upstream is the wrong home)
+        - Unsure
+    validations:
+      required: true
+  - type: dropdown
+    id: gui
+    attributes:
+      label: Does this need a GUI on Omarchy?
+      options:
+        - "No — CLI / library / data only"
+        - "Yes — desktop contract applies (Wayland, no Super-key defaults)"
+        - Not sure
+    validations:
+      required: true
+  - type: checkboxes
+    id: clean-room
+    attributes:
+      label: Clean-room
+      description: All four are required. Issues that fail this are closed.
+      options:
+        - label: I did not include proprietary source, binaries, leaked documents, or NDA material.
+          required: true
+        - label: This describes a capability (job, standards, tests), not a clone of a named commercial feature or UI.
+          required: true
+        - label: I did not attach screenshots of commercial software UIs.
+          required: true
+        - label: I will rephrase if a maintainer asks for capability language.
+          required: true
+  - type: checkboxes
+    id: help
+    attributes:
+      label: I can help
+      options:
+        - label: Write or review the spec
+        - label: Implement
+        - label: Test on Omarchy / Linux
+        - label: This issue was drafted by an agent (I am the accountable human)
+  - type: textarea
+    id: extra
+    attributes:
+      label: Other notes
+      description: Optional. Still no proprietary material.
