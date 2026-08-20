@@ -17,6 +17,7 @@ body:
         - fea
         - cfd
         - eda
+        - bench
         - pdm
         - interop
         - drawings
@@ -33,6 +34,7 @@ body:
       options:
         - Mechanical engineer
         - Electrical / electronics engineer
+        - Electronics repair
         - Manufacturing / CNC
         - Civil / structural
         - Student

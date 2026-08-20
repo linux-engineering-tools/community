@@ -16,15 +16,9 @@ This list is a map, not an endorsement ranking. Add entries with a name, what jo
 | [LibreCAD](https://librecad.org/) | 2D CAD |
 | [QCAD](https://qcad.org/) | 2D CAD (community / professional editions) |
 
-## Electronics
+## Electronics (EDA, bench, repair)
 
-| Project | Job |
-|---|---|
-| [KiCad](https://www.kicad.org/) | Schematic and PCB |
-| [Horizon EDA](https://horizon-eda.org/) | Schematic and PCB |
-| [LibrePCB](https://librepcb.org/) | Schematic and PCB |
-| [ngspice](https://ngspice.sourceforge.io/) | Circuit simulation |
-| [xschem](https://xschem.sourceforge.io/gtk.php) | Schematic capture (often IC) |
+Design tools (KiCad and friends), instrument control (sigrok, LXI/SCPI), USB capture, and JTAG/SWD are listed in [`electronics.md`](electronics.md). The usual problem is **finding** them, not that none exist. Read that page before filing a `domain:eda` or `domain:bench` requirement.
 
 ## Simulation
 
