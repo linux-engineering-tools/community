@@ -32,7 +32,8 @@ Grok project skills under `.grok/skills/` are symlinks to the same files.
 
 - Requirements and RFCs: GitHub issues in this repo (use the issue forms)
 - Specs: `specs/`
-- Existing FOSS to prefer: `catalog/README.md` (electronics bench/repair: `catalog/electronics.md`)
+- Spaces (mechanical / fabrication / electronics / …): [`SPACES.md`](SPACES.md). Do not create a new repo or org per topic.
+- Existing FOSS: `catalog/README.md` (mechanical, fabrication, electronics pages)
 - Process: `CONTRIBUTING.md`, `GOVERNANCE.md`, `CODE_OF_CONDUCT.md`
 
 ## Default branch work

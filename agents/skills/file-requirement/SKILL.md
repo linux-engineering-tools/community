@@ -21,7 +21,13 @@ Title: `[req] ` plus the job in a few words.
 
 Labels: `type:requirement`, `status:needs-triage`, `domain:<name>`, `ip:clean` if the form checks passed.
 
-`domain:eda` is schematic/PCB/simulation. `domain:bench` is instruments, capture, and repair (PSU, DMM, LA/scope, USB sniff, JTAG). Check [`catalog/electronics.md`](../../../catalog/electronics.md) first; sigrok and lxi-tools are the default upstreams for instruments.
+Map domain → space with [`SPACES.md`](../../../SPACES.md). Check that space’s catalog page first.
+
+- `cad` parametric solids; `mesh` polygon/sculpt (not a FreeCAD clone of Blender, not the reverse)
+- `cam` toolpaths; `cnc` machine control; `print` slice/host/firmware
+- `eda` schematic/PCB; `bench` instruments and repair (sigrok / lxi-tools first)
+
+Catalog questions belong in **Discussions** in that space, not as issues.
 
 ## Rewrite product-named drafts
 

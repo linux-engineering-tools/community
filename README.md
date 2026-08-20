@@ -28,6 +28,14 @@ LET collects **jobs to be done**, written as capabilities and acceptance tests, 
 
 Open requirements: [Issues](https://github.com/linux-engineering-tools/community/issues) · [Project board](https://github.com/orgs/linux-engineering-tools/projects/1). Blank issues are disabled; use the form.
 
+Talk in [Discussions](https://github.com/linux-engineering-tools/community/discussions), in the category for that [space](SPACES.md) (Mechanical, Fabrication, Electronics, …). Spaces are labels and discussion rooms, not extra GitHub organizations.
+
+| Space | File a requirement | Catalog |
+|---|---|---|
+| Mechanical (CAD, mesh, drawings) | domain `cad` / `mesh` / `drawings` | [catalog/mechanical.md](catalog/mechanical.md) |
+| Fabrication (CAM, CNC, 3D print) | domain `cam` / `cnc` / `print` | [catalog/fabrication.md](catalog/fabrication.md) |
+| Electronics (EDA, bench) | domain `eda` / `bench` | [catalog/electronics.md](catalog/electronics.md) |
+
 ## Desktop target
 
 GUI tools must work as native Wayland apps on [Omarchy](https://omarchy.org/) (Hyprland). Super-key chords belong to the compositor. See [`agents/skills/omarchy-desktop/SKILL.md`](agents/skills/omarchy-desktop/SKILL.md).

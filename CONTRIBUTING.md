@@ -6,6 +6,8 @@ Agents: start at [`AGENTS.md`](AGENTS.md) and the matching skill under `agents/s
 
 ## File a requirement
 
+Questions and “does this tool exist?” go to [Discussions](https://github.com/linux-engineering-tools/community/discussions) in the matching [space](SPACES.md) (Mechanical, Fabrication, Electronics, …). Do not open a requirement issue for catalog lookup.
+
 Use the **Requirement** issue form. Accepted items show up on the [Requirements project](https://github.com/orgs/linux-engineering-tools/projects/1). A useful requirement states:
 
 - Who needs it and what job they are doing

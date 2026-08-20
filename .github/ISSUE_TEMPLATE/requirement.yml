@@ -13,14 +13,17 @@ body:
       label: Domain
       options:
         - cad
+        - mesh
+        - drawings
         - cam
+        - cnc
+        - print
         - fea
         - cfd
         - eda
         - bench
         - pdm
         - interop
-        - drawings
         - scientific
         - civil
         - desktop
@@ -36,6 +39,7 @@ body:
         - Electrical / electronics engineer
         - Electronics repair
         - Manufacturing / CNC
+        - 3D printing
         - Civil / structural
         - Student
         - Researcher

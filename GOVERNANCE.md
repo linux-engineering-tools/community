@@ -11,6 +11,8 @@ Process for this organization. No other charter.
 
 Organization-wide defaults live in the [`.github`](https://github.com/linux-engineering-tools/.github) repository.
 
+Topic areas (mechanical, fabrication, electronics, …) are **spaces**, not extra orgs or extra requirement repos. See [`SPACES.md`](SPACES.md).
+
 ## Roles
 
 - **Maintainers** merge to default branches, triage issues, and decide incubation.
