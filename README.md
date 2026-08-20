@@ -23,8 +23,10 @@ LET collects **jobs to be done**, written as capabilities and acceptance tests, 
 ## How to participate
 
 1. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening an issue.
-2. File a **requirement** with the issue form. Describe the job, inputs/outputs, standards, and tests — not a product to copy.
+2. File a **requirement** with the [issue form](https://github.com/linux-engineering-tools/community/issues/new/choose). Describe the job, inputs/outputs, standards, and tests — not a product to copy.
 3. If you are using an agent, point it at [`AGENTS.md`](AGENTS.md).
+
+Open requirements: [Issues](https://github.com/linux-engineering-tools/community/issues). Blank issues are disabled; use the form.
 
 ## Desktop target
 

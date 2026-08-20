@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) first. Describe a **job to be done** with open standards and tests. Do not specify a clone of a commercial product.
+        Read [CONTRIBUTING.md](https://github.com/linux-engineering-tools/community/blob/main/CONTRIBUTING.md) first. Describe a **job to be done** with open standards and tests. Do not specify a clone of a commercial product.
   - type: dropdown
     id: domain
     attributes:

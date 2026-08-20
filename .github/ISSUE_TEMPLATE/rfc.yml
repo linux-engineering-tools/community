@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this for **incubation** or **process**. For a user-facing capability, use the Requirement form instead. Read [GOVERNANCE.md](../blob/main/GOVERNANCE.md).
+        Use this for **incubation** or **process**. For a user-facing capability, use the Requirement form instead. Read [GOVERNANCE.md](https://github.com/linux-engineering-tools/community/blob/main/GOVERNANCE.md).
   - type: dropdown
     id: kind
     attributes:
