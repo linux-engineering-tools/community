@@ -67,9 +67,11 @@ After they exist, discussion links are:
 Keep **one** org project: [Requirements](https://github.com/orgs/linux-engineering-tools/projects/1).
 
 - Table **Triage** — everything
-- Board **By stage** — pipeline
+- Board **By stage** — group this view by the **Stage** field, not GitHub’s Status
 - Board **By domain** — fine grain
 - Filtered table views per space when the list is long (filter on Domain)
+
+**Status** (Todo / In Progress / Done) means a human is implementing that item. Seeded requirements stay **Todo**. Pipeline state is **Stage** (`needs-triage`, `needs-spec`, `upstream-first`, `incubating`, `graduated`, `wont`). `upstream-first` is not In Progress.
 
 **Split a space into its own GitHub Project** only when that space has a named maintainer and the main board is unusable without the filter. Auto-add by `domain:*` labels. Do not split the issue tracker.
 
