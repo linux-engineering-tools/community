@@ -35,6 +35,10 @@ Talk in [Discussions](https://github.com/linux-engineering-tools/community/discu
 | Mechanical (CAD, mesh, drawings) | domain `cad` / `mesh` / `drawings` | [catalog/mechanical.md](catalog/mechanical.md) |
 | Fabrication (CAM, CNC, 3D print) | domain `cam` / `cnc` / `print` | [catalog/fabrication.md](catalog/fabrication.md) |
 | Electronics (EDA, bench) | domain `eda` / `bench` | [catalog/electronics.md](catalog/electronics.md) |
+| Simulation (FEA, CFD) | domain `fea` / `cfd` | [catalog/simulation.md](catalog/simulation.md) |
+| Civil / GIS / BIM | domain `civil` | [catalog/civil.md](catalog/civil.md) |
+
+Research-backed fan-out (head-start vs upstream vs possible incubation): [`ROADMAP.md`](ROADMAP.md).
 
 ## Desktop target
 

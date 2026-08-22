@@ -24,11 +24,11 @@ How LET is partitioned. One organization, one requirements repo, several **space
 | **Simulation** | `fea`, `cfd` | Solvers and pre/post |
 | **Data** | `pdm`, `interop` | Revisions, BOM, open-format round-trip |
 | **Desktop** | `desktop` | Omarchy / Wayland contract (cross-cutting) |
-| **Other** | `scientific`, `civil`, `other` | Until a space earns its own row |
+| **Other** | `scientific`, `civil`, `other` | Process, automation, biomedical, nuclear until a space earns its own row |
 
 `cad` is parametric engineering CAD. `mesh` is polygon/sculpt/subdivision modelling (the Blender-class job). They are not the same requirement. `cam` is toolpath generation; `cnc` is talking to the machine (LinuxCNC-class). `print` is slice, host, and printer firmware on Linux.
 
-Catalog pages: [`catalog/README.md`](catalog/README.md), [`catalog/electronics.md`](catalog/electronics.md), [`catalog/mechanical.md`](catalog/mechanical.md), [`catalog/fabrication.md`](catalog/fabrication.md).
+Catalog pages: [`catalog/README.md`](catalog/README.md). Fan-out plan: [`ROADMAP.md`](ROADMAP.md).
 
 ## Discussions vs issues
 

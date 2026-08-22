@@ -13,6 +13,14 @@ Standards to prefer in requirements: SCPI / IEEE 488.2, LXI, USBTMC, GPIB (IEEE 
 | [LibrePCB](https://librepcb.org/) | Schematic and PCB |
 | [ngspice](https://ngspice.sourceforge.io/) | Circuit simulation |
 | [xschem](https://xschem.sourceforge.io/gtk.php) | Schematic capture (often IC) |
+| [Yosys](https://yosyshq.net/yosys/) | Logic synthesis (TUI) |
+| [GHDL](https://ghdl.github.io/ghdl/) | VHDL simulation |
+| [Verilator](https://www.veripool.org/verilator/) | Verilog/SystemVerilog simulation |
+| [Qucs-S](https://ra3xdh.github.io/) | Circuit simulation GUI over ngspice and others |
+| [openEMS](https://openems.de/) | Electromagnetic FDTD |
+| [scikit-rf](https://scikit-rf.org/) | Network / S-parameter analysis in Python |
+
+High-frequency SI/PI and some IC DRC/bitstream jobs are still thin on Linux. Prefer **upstream** (KiCad, ngspice, openEMS) before a LET tool. Manufacturing interchange: prefer **IPC-2581** and Gerber X3 over vendor CAM databases.
 
 ## Instruments and signals (bench)
 

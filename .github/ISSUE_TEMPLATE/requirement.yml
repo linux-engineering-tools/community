@@ -28,6 +28,8 @@ body:
         - civil
         - desktop
         - other
+        - process
+        - automation
     validations:
       required: true
   - type: dropdown
