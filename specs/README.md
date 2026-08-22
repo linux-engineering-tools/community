@@ -14,3 +14,9 @@ Each spec lives in `specs/<short-name>/` and states:
 - Desktop contract, if there is a GUI
 
 Start from an accepted requirement issue. Do not put clone-specs here.
+
+Drafts from the Omarchy research extracts:
+
+- [`let-interop/`](let-interop/) — open-format round-trip harness (STEP, IFC, DXF, IPC-2581)
+- [`let-solver-pipe/`](let-solver-pipe/) — CLI pre/post over existing FEA/CFD solvers
+
