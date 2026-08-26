@@ -4,6 +4,17 @@ Parametric CAD, mesh modelling, and drawings. Contribute **upstream** before inc
 
 `cad` ≠ `mesh`. A solid with a feature history is not a triangle sculpture.
 
+Kernels are dependencies, not LET products. Geometry reliability jobs go to the kernel or the CAD that embeds it ([requirement #6](https://github.com/linux-engineering-tools/community/issues/6)).
+
+## Kernels (`domain:cad` / `interop`)
+
+| Project | Job |
+|---|---|
+| [Open CASCADE Technology](https://dev.opencascade.org/) | B-rep solids, Booleans, STEP exchange (FreeCAD and others) |
+| [Netgen](https://ngsolve.org/) | Tetrahedral meshing from solids / STL (also simulation) |
+
+Do not incubate a kernel replacement.
+
 ## Parametric / solids (`domain:cad`)
 
 | Project | Job |

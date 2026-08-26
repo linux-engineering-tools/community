@@ -10,19 +10,14 @@ Maps, not rankings. Layout follows [`SPACES.md`](../SPACES.md).
 | Fabrication (`cam`, `cnc`, `print`) | [`fabrication.md`](fabrication.md) |
 | Electronics (`eda`, `bench`) | [`electronics.md`](electronics.md) |
 | Simulation (`fea`, `cfd`) | [`simulation.md`](simulation.md) |
+| Data (`pdm`, `interop`) | [`data.md`](data.md) |
+| Desktop (`desktop`) | [`desktop.md`](desktop.md) |
 | Civil / geospatial (`civil`) | [`civil.md`](civil.md) |
-| Process / chemical | [`process.md`](process.md) |
-| Automation / control | [`automation.md`](automation.md) |
-| Scientific / biomedical / nuclear | [`scientific.md`](scientific.md) |
+| Process / chemical (`process`) | [`process.md`](process.md) |
+| Automation / control (`automation`) | [`automation.md`](automation.md) |
+| Scientific / biomedical / nuclear (`scientific`) | [`scientific.md`](scientific.md) |
 
-Research extracts (Omarchy engineering suite) and the fan-out plan: [`../ROADMAP.md`](../ROADMAP.md).
-
-## Data / PDM
-
-| Project | Job |
-|---|---|
-| [InvenTree](https://inventree.org/) | Parts, stock, BOM |
-| [Cascadia PLM](https://cascadiaplm.com/) | Self-hosted PLM |
+Research extracts and the fan-out plan: [`../ROADMAP.md`](../ROADMAP.md).
 
 ## Scientific computing
 

@@ -36,7 +36,12 @@ Talk in [Discussions](https://github.com/linux-engineering-tools/community/discu
 | Fabrication (CAM, CNC, 3D print) | domain `cam` / `cnc` / `print` | [catalog/fabrication.md](catalog/fabrication.md) |
 | Electronics (EDA, bench) | domain `eda` / `bench` | [catalog/electronics.md](catalog/electronics.md) |
 | Simulation (FEA, CFD) | domain `fea` / `cfd` | [catalog/simulation.md](catalog/simulation.md) |
+| Data (PDM, interop) | domain `pdm` / `interop` | [catalog/data.md](catalog/data.md) |
 | Civil / GIS / BIM | domain `civil` | [catalog/civil.md](catalog/civil.md) |
+| Process / chemical | domain `process` | [catalog/process.md](catalog/process.md) |
+| Automation / control | domain `automation` | [catalog/automation.md](catalog/automation.md) |
+| Scientific / biomedical | domain `scientific` | [catalog/scientific.md](catalog/scientific.md) |
+| Desktop (Omarchy / Wayland) | domain `desktop` | [catalog/desktop.md](catalog/desktop.md) |
 
 Research-backed fan-out (head-start vs upstream vs possible incubation): [`ROADMAP.md`](ROADMAP.md).
 
