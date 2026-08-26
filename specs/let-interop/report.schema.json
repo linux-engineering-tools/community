@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linux-engineering-tools.github.io/let-interop/report.schema.json",
+  "title": "let-interop report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ok", "fixture", "format", "counts", "units"],
+  "properties": {
+    "ok": { "type": "boolean" },
+    "fixture": { "type": "string", "minLength": 1 },
+    "format": {
+      "type": "string",
+      "enum": ["step-ap242", "step-ap214", "ifc", "dxf", "ipc-2581"]
+    },
+    "command": {
+      "type": "string",
+      "enum": ["check", "roundtrip"]
+    },
+    "dry_run": { "type": "boolean" },
+    "units": {
+      "type": "string",
+      "description": "Length unit after import, e.g. millimetre"
+    },
+    "counts": {
+      "type": "object",
+      "required": ["solids", "instances"],
+      "properties": {
+        "solids": { "type": "integer", "minimum": 0 },
+        "instances": { "type": "integer", "minimum": 0 },
+        "faces": { "type": "integer", "minimum": 0 },
+        "ifc_entities": { "type": "integer", "minimum": 0 },
+        "dxf_entities": { "type": "integer", "minimum": 0 },
+        "pcb_nets": { "type": "integer", "minimum": 0 },
+        "pcb_layers": { "type": "integer", "minimum": 0 },
+        "pcb_drills": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "bbox": {
+      "type": "object",
+      "required": ["xmin", "ymin", "zmin", "xmax", "ymax", "zmax"],
+      "properties": {
+        "xmin": { "type": "number" },
+        "ymin": { "type": "number" },
+        "zmin": { "type": "number" },
+        "xmax": { "type": "number" },
+        "ymax": { "type": "number" },
+        "zmax": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "tolerance": {
+      "type": "object",
+      "properties": {
+        "length": { "type": "number", "minimum": 0 },
+        "count": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "error": {
+      "type": "object",
+      "required": ["code", "message"],
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" },
+        "path": {
+          "type": "string",
+          "description": "STEP entity, IFC Class:GlobalId, DXF type, or IPC-2581 XPath"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

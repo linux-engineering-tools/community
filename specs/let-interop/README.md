@@ -1,42 +1,66 @@
-# Spec draft: `let-interop`
+# Spec: `let-interop`
 
 Open-format **round-trip test suite**. Not a CAD. Not a clone of a commercial translator.
 
-**Status:** draft — needs requirement #8 plus this spec accepted, then RFC before any repo.
+**Status:** draft — requirements [#8](https://github.com/linux-engineering-tools/community/issues/8), [#14](https://github.com/linux-engineering-tools/community/issues/14), [#15](https://github.com/linux-engineering-tools/community/issues/15). RFC [#21](https://github.com/linux-engineering-tools/community/issues/21). **Do not create a repo** until upstream is asked and a maintainer accepts the RFC.
 
 ## Job
 
-An engineer (or CI) on Linux proves that a given tool chain can import and export published geometry/electronics formats without silent data loss.
+An engineer (or CI) on Linux proves that a given tool chain can import and export published geometry and electronics formats without silent data loss.
 
 ## Standards
 
-- STEP AP242 (ISO 10303-242) assemblies
-- IFC (ISO 16739) for building/structural
-- DXF (published Autodesk spec) 2D
-- IPC-2581 (PCB manufacturing) where applicable
+- STEP AP242 (ISO 10303-242) assemblies; AP214 as a documented fallback
+- IFC (ISO 16739); prefer IFC4 / IFC4.3
+- DXF (published Autodesk spec) 2D subset
+- IPC-2581 (PCB manufacturing) where the host already writes it
 
 Vendor binaries (`.rvt`, `.pln`, `.adb`, `.nxasm`) are **out of scope**.
 
 ## CLI (proposed)
 
-`let-interop` is a working name only. Final binary must not be `let`.
+Working name only. Final binary must not be `let`.
 
 ```
-let-interop check --in fixture.step --expect fixture.json
-let-interop roundtrip --in fixture.step --out /tmp/out.step --report report.json
+let-interop --help
+let-interop check --in fixtures/step/two-instances.step --expect fixtures/step/two-instances.json
+let-interop roundtrip --in fixtures/step/two-instances.step --out /tmp/out.step --report report.json
+let-interop roundtrip --dry-run --in fixtures/step/two-instances.step --report report.json
 ```
 
-Exit 0 on pass; non-zero on missing entities, unit mismatch, or failed schema validate. JSON report lists counts (solids, instances, properties).
+`--dry-run` parses input, validates against the expect file, and writes the report **without** calling an external host export. Exit 0 if parse + counts match.
+
+### Exit codes
+
+| Code | Meaning |
+|---|---|
+| 0 | Pass |
+| 2 | Input missing, unreadable, or schema-invalid |
+| 3 | Round-trip drift beyond tolerance (counts, bbox, units) |
+| 4 | Host/kernel subprocess failed (named in `error`) |
+| 64 | Usage (`--help` is 0) |
+
+## JSON report
+
+Schema: [`report.schema.json`](report.schema.json). Required fields: `ok`, `fixture`, `format`, `counts`, `units`. On failure, `error` names the standard path (STEP entity, IFC class+GlobalId, DXF entity type, IPC-2581 XPath).
+
+## Fixtures
+
+Named in [`fixtures/README.md`](fixtures/README.md). Generate from public tools (CadQuery, IfcOpenShell, KiCad). Do not check in proprietary CAD.
 
 ## Acceptance tests
 
-- In-tree fixtures for STEP AP242 (assembly with two instances) and IFC (one IfcBeam + IfcColumn).
-- Round-trip: entity counts and bounding box within documented tolerance.
-- Failures name the standard clause or schema path.
+- `check` on each fixture exits 0 and matches the expect JSON.
+- `roundtrip` on STEP and IFC: entity counts and bounding box within the expect file’s `tolerance`.
+- `roundtrip --dry-run` never invokes FreeCAD/KiCad/IfcConvert.
+- Failures print JSON on stdout or `--report`; non-zero exit.
+- Suite is headless (no GUI).
 
 ## Upstream check
 
-OpenCASCADE, IfcOpenShell, FreeCAD, KiCad already parse these formats. This tool is a **harness** if those projects will not host a shared, discipline-neutral fixture suite. Ask them first (`catalog/` pages). Do not reimplement kernels.
+OpenCASCADE, IfcOpenShell, FreeCAD, and KiCad already parse these formats. This tool is a **harness** only if they will not host a shared, discipline-neutral fixture suite.
+
+Copy-paste asks: [`upstream-ask.md`](upstream-ask.md). Record the issue/forum URL on RFC #21 before any `status:incubating`.
 
 ## GUI
 

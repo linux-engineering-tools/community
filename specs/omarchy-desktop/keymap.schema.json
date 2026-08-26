@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linux-engineering-tools.github.io/omarchy-desktop/keymap.schema.json",
+  "title": "LET GUI keymap",
+  "type": "object",
+  "required": ["bindings"],
+  "properties": {
+    "app": { "type": "string" },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action", "keys", "rebindable"],
+        "properties": {
+          "action": { "type": "string" },
+          "keys": { "type": "string", "description": "e.g. Ctrl+S" },
+          "rebindable": { "type": "boolean" },
+          "cli": { "type": "string", "description": "Equivalent non-interactive command" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
