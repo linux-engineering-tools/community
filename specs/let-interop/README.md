@@ -2,7 +2,7 @@
 
 Open-format **round-trip test suite**. Not a CAD. Not a clone of a commercial translator.
 
-**Status:** draft — requirements [#8](https://github.com/linux-engineering-tools/community/issues/8), [#14](https://github.com/linux-engineering-tools/community/issues/14), [#15](https://github.com/linux-engineering-tools/community/issues/15). RFC [#21](https://github.com/linux-engineering-tools/community/issues/21). **Do not create a repo** until upstream is asked and a maintainer accepts the RFC.
+**Status:** incubating — [linux-engineering-tools/let-interop](https://github.com/linux-engineering-tools/let-interop). Requirements [#8](https://github.com/linux-engineering-tools/community/issues/8), [#14](https://github.com/linux-engineering-tools/community/issues/14), [#15](https://github.com/linux-engineering-tools/community/issues/15). RFC [#21](https://github.com/linux-engineering-tools/community/issues/21). Docs-first: CLI contract and `--dry-run` stub. Kernels stay upstream.
 
 ## Job
 

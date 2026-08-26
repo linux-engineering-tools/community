@@ -78,7 +78,7 @@ Only if upstream is the wrong home. Not product clones. **No empty tool reposito
 
 | Working name | Job | GUI | Spec | RFC |
 |---|---|---|---|---|
-| `let-interop` | Open-format round-trip test suite | No | [specs/let-interop](specs/let-interop/) | #21 |
+| `let-interop` | Open-format round-trip test suite | No | [specs/let-interop](specs/let-interop/) | #21 **incubating** ([repo](https://github.com/linux-engineering-tools/let-interop)) |
 | `let-solver-pipe` | Mesh → deck → run → JSON over existing solvers | No | [specs/let-solver-pipe](specs/let-solver-pipe/) | #22 |
 | `let-sparam` | Frequency-domain network extraction | No | — (stay on #16) | — |
 | `let-dexpi` | P&ID / flowsheet on DEXPI / ISO 15926 | Optional | — (stay on #17) | — |
@@ -101,7 +101,7 @@ Native Linux GUIs do not yet match high-fidelity parametric BIM or advanced surf
 2. File remaining **requirements** in capability language. **Done** (#14–#20). Stop filing more until these are triaged.
 3. Write public **specs** for glue we might own (`let-interop`, `let-solver-pipe`) plus #1 / #6 / #10. **Drafts in `specs/`.**
 4. **Ask upstream** using `specs/*/upstream-ask.md`. Record URLs on RFC #21 and #22.
-5. RFC + incubate those two **only** after a maintainer decision and a documented upstream answer (or timeout).
+5. RFC + incubate those two **only** after a maintainer decision and a documented upstream answer (or timeout). **`let-interop` is incubating** (docs-first). `let-solver-pipe` is not.
 6. Revisit greenfield rows (`let-sparam`, `let-dexpi`, `let-61131-test`, `let-dicom-report`) when a space has a named maintainer.
 
 The GitHub project [Requirements](https://github.com/orgs/linux-engineering-tools/projects/1) is the board. **Status** stays Todo until a human is implementing. **Stage** is the pipeline. The project Domain field has no `process` / `automation` options yet; those issues use Domain `other` plus issue labels.
