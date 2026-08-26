@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linux-engineering-tools.github.io/let-solver-pipe/summary.schema.json",
+  "title": "let-solver-pipe summary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ok", "solver", "dry_run"],
+  "properties": {
+    "ok": { "type": "boolean" },
+    "solver": {
+      "type": "string",
+      "enum": ["calculix", "elmer", "code_aster", "openfoam", "gmsh"]
+    },
+    "dry_run": { "type": "boolean" },
+    "geom": { "type": "string" },
+    "mesh": { "type": "string" },
+    "deck": { "type": "string" },
+    "max_displacement": { "type": "number" },
+    "residual": { "type": "number" },
+    "error": {
+      "type": "object",
+      "required": ["solver", "message"],
+      "properties": {
+        "solver": { "type": "string" },
+        "message": { "type": "string" },
+        "file": { "type": "string" },
+        "line": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

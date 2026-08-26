@@ -24,7 +24,13 @@ How LET is partitioned. One organization, one requirements repo, several **space
 | **Simulation** | `fea`, `cfd` | Solvers and pre/post |
 | **Data** | `pdm`, `interop` | Revisions, BOM, open-format round-trip |
 | **Desktop** | `desktop` | Omarchy / Wayland contract (cross-cutting) |
-| **Other** | `scientific`, `civil`, `other` | Process, automation, biomedical, nuclear until a space earns its own row |
+| **Civil** | `civil` | BIM / IFC, GIS, structural |
+| **Process** | `process` | Flowsheet, DEXPI / ISO 15926, kinetics |
+| **Automation** | `automation` | IEC 61131-3 tests, EtherCAT, OPC UA |
+| **Scientific** | `scientific` | Biomedical imaging, nuclear **research**, HPC glue |
+| **Other** | `other` | Until a space earns its own row |
+
+Discussion categories already exist for Mechanical, Fabrication, Electronics, Simulation, Data, and Desktop. Civil, process, automation, and scientific stay in **Q&A** (or the closest existing category) until traffic warrants a room. Do not add GitHub orgs.
 
 `cad` is parametric engineering CAD. `mesh` is polygon/sculpt/subdivision modelling (the Blender-class job). They are not the same requirement. `cam` is toolpath generation; `cnc` is talking to the machine (LinuxCNC-class). `print` is slice, host, and printer firmware on Linux.
 

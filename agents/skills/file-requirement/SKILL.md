@@ -26,6 +26,7 @@ Map domain → space with [`SPACES.md`](../../../SPACES.md). Check that space’
 - `cad` parametric solids; `mesh` polygon/sculpt (not a FreeCAD clone of Blender, not the reverse)
 - `cam` toolpaths; `cnc` machine control; `print` slice/host/firmware
 - `eda` schematic/PCB; `bench` instruments and repair (sigrok / lxi-tools first)
+- `process` flowsheet / DEXPI; `automation` IEC 61131 tests / industrial I/O (not a vendor runtime clone)
 
 Catalog questions belong in **Discussions** in that space, not as issues.
 

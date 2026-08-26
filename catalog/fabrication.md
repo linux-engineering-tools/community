@@ -8,8 +8,19 @@ CAM, CNC machine control, and 3D printing. Contribute **upstream** before incuba
 
 | Project | Job |
 |---|---|
-| FreeCAD CAM / Path | Toolpaths from CAD, G-code export |
-| [LinuxCNC](https://linuxcnc.org/) docs/posts | Controller-side G-code (not a CAM GUI) |
+| [FreeCAD](https://www.freecad.org/) CAM / Path | Toolpaths from CAD solids, G-code export |
+| [dxf2gcode](https://sourceforge.net/projects/dxf2gcode/) | 2D DXF/PDF/PS → G-code |
+| [LinuxCNC](https://linuxcnc.org/) docs/posts | Controller-side G-code dialect (not a CAM GUI) |
+
+Solid 3-axis mill and turning stay **upstream** in FreeCAD CAM ([requirement #4](https://github.com/linux-engineering-tools/community/issues/4)). Do not incubate a CAM GUI.
+
+## G-code check (`domain:cam` / `cnc`)
+
+| Project | Job |
+|---|---|
+| [CAMotics](https://camotics.org/) | 3-axis G-code simulation and visualization on Linux |
+
+CAMotics is a simulator, not a toolpath generator.
 
 ## CNC control (`domain:cnc`)
 
@@ -17,6 +28,7 @@ CAM, CNC machine control, and 3D printing. Contribute **upstream** before incuba
 |---|---|
 | [LinuxCNC](https://linuxcnc.org/) | Machine control, HAL, G-code interpreter |
 | [Machinekit](https://www.machinekit.io/) | Related real-time motion (where still maintained) |
+| [bCNC](https://github.com/vlachoudis/bCNC) | GRBL-class sender / pendant (Python) |
 
 ## 3D print (`domain:print`)
 

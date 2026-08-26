@@ -11,6 +11,7 @@ The Headless Core in the Omarchy extracts: these tools already run on Arch. LET 
 | [OpenFOAM](https://openfoam.org/) | Finite-volume CFD |
 | [SU2](https://su2code.github.io/) | CFD / design optimization (aerospace) |
 | [Gmsh](https://gmsh.info/) | Mesh generation (also FEA) |
+| [Netgen](https://ngsolve.org/) | Tetrahedral meshing; NGSolve FEM |
 
 ## FEA / multiphysics (`domain:fea`)
 

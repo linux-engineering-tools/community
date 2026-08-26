@@ -7,7 +7,7 @@ description: Omarchy/Hyprland desktop contract for LET GUIs. Use when adding sho
 
 GUI tools in this organization must work as **native Wayland** apps on [Omarchy](https://omarchy.org/) (Hyprland). An X11-only or “disable the compositor Super key” path is a defect.
 
-Full contract: issue labeled `platform:omarchy` in this repo. Do not copy that issue into this skill.
+Full contract: issue labeled `platform:omarchy` and [`specs/omarchy-desktop/`](../../../specs/omarchy-desktop/). Do not copy that issue into this skill.
 
 ## Super is the compositor’s key
 
