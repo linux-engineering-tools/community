@@ -1,6 +1,6 @@
-# Simulation FOSS on Linux
+# Simulation free and open-source software (FOSS) on Linux
 
-FEA, CFD, meshing, and related solvers. Contribute **upstream** before incubating. See [`SPACES.md`](../SPACES.md).
+Finite element analysis (FEA), computational fluid dynamics (CFD), meshing, and related solvers. Contribute **upstream** before incubating. See [`SPACES.md`](../SPACES.md). Terms: [`../TERMS.md`](../TERMS.md).
 
 The Headless Core in the Omarchy extracts: these tools already run on Arch. LET glue is a CLI pipeline ([requirement #7](https://github.com/linux-engineering-tools/community/issues/7)), not a new solver.
 

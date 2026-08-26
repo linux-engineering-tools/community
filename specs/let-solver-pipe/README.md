@@ -1,6 +1,6 @@
 # Spec: `let-solver-pipe`
 
-One **CLI pre/post pipeline** over **existing** FEA/CFD solvers. Not a new solver. Not a workbench clone.
+One **command-line interface (CLI) prepare/inspect pipeline** over **existing** finite element analysis (FEA) and computational fluid dynamics (CFD) solvers. Not a new solver. Not a workbench clone. Terms: [`../../TERMS.md`](../../TERMS.md).
 
 **Status:** draft — requirement [#7](https://github.com/linux-engineering-tools/community/issues/7). RFC [#22](https://github.com/linux-engineering-tools/community/issues/22). **Do not create a repo** until upstream is asked and a maintainer accepts the RFC.
 

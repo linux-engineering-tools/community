@@ -2,11 +2,13 @@
 
 Capability-first, clean-room, Linux-native engineering tools.
 
-This repository is the **requirements board** and project home. Tools are incubated in other repositories under [linux-engineering-tools](https://github.com/linux-engineering-tools) only after a public spec exists and contributing upstream is the wrong home.
+This repository is the **requirements board** and project home. Tools are incubated in other repositories under [linux-engineering-tools](https://github.com/linux-engineering-tools) only after a public specification exists and contributing **upstream** (to an existing project) is the wrong home.
+
+Acronyms and domain words: [`TERMS.md`](TERMS.md). Spell the expanded form on first use in a document, then the short form.
 
 ## What this is
 
-Engineers who want to work on Linux still hit missing or weak tools in mechanical CAD, CAM, production drawings, PDM, and a long tail of desktop engineering software. PCB layout is largely served by existing FOSS. Solvers for FEA/CFD often already run on Linux; the gaps are elsewhere.
+Engineers who want to work on Linux still hit missing or weak tools in mechanical computer-aided design (CAD), computer-aided manufacturing (CAM), production drawings, product data management (PDM), and a long tail of desktop engineering software. Printed circuit board (PCB) layout is largely served by existing free and open-source software (FOSS). Solvers for finite element analysis (FEA) and computational fluid dynamics (CFD) often already run on Linux; the gaps are elsewhere.
 
 LET collects **jobs to be done**, written as capabilities and acceptance tests, then either:
 
@@ -33,11 +35,11 @@ Talk in [Discussions](https://github.com/linux-engineering-tools/community/discu
 | Space | File a requirement | Catalog |
 |---|---|---|
 | Mechanical (CAD, mesh, drawings) | domain `cad` / `mesh` / `drawings` | [catalog/mechanical.md](catalog/mechanical.md) |
-| Fabrication (CAM, CNC, 3D print) | domain `cam` / `cnc` / `print` | [catalog/fabrication.md](catalog/fabrication.md) |
-| Electronics (EDA, bench) | domain `eda` / `bench` | [catalog/electronics.md](catalog/electronics.md) |
+| Fabrication (CAM, computer numerical control (CNC), 3D print) | domain `cam` / `cnc` / `print` | [catalog/fabrication.md](catalog/fabrication.md) |
+| Electronics (electronic design automation (EDA), bench) | domain `eda` / `bench` | [catalog/electronics.md](catalog/electronics.md) |
 | Simulation (FEA, CFD) | domain `fea` / `cfd` | [catalog/simulation.md](catalog/simulation.md) |
-| Data (PDM, interop) | domain `pdm` / `interop` | [catalog/data.md](catalog/data.md) |
-| Civil / GIS / BIM | domain `civil` | [catalog/civil.md](catalog/civil.md) |
+| Data (PDM, interoperability) | domain `pdm` / `interop` | [catalog/data.md](catalog/data.md) |
+| Civil / geographic information systems (GIS) / building information modelling (BIM) | domain `civil` | [catalog/civil.md](catalog/civil.md) |
 | Process / chemical | domain `process` | [catalog/process.md](catalog/process.md) |
 | Automation / control | domain `automation` | [catalog/automation.md](catalog/automation.md) |
 | Scientific / biomedical | domain `scientific` | [catalog/scientific.md](catalog/scientific.md) |
@@ -47,7 +49,7 @@ Research-backed fan-out (head-start vs upstream vs possible incubation): [`ROADM
 
 ## Desktop target
 
-GUI tools must work as native Wayland apps on [Omarchy](https://omarchy.org/) (Hyprland). Super-key chords belong to the compositor. See [`agents/skills/omarchy-desktop/SKILL.md`](agents/skills/omarchy-desktop/SKILL.md).
+Graphical user interface (GUI) tools must work as native [Wayland](https://wayland.freedesktop.org/) apps on [Omarchy](https://omarchy.org/) (a Linux desktop that uses the Hyprland compositor). Super-key chords (the logo key) belong to the compositor. See [`agents/skills/omarchy-desktop/SKILL.md`](agents/skills/omarchy-desktop/SKILL.md).
 
 ## License
 

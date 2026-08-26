@@ -1,6 +1,6 @@
 # Spec: Omarchy / Wayland desktop contract
 
-Cross-cutting contract for any LET GUI. Requirement [#1](https://github.com/linux-engineering-tools/community/issues/1). Skill (do not duplicate into skills): `agents/skills/omarchy-desktop/SKILL.md`.
+Cross-cutting contract for any Linux Engineering Tools (LET) graphical user interface (GUI). Requirement [#1](https://github.com/linux-engineering-tools/community/issues/1). Skill (do not duplicate into skills): `agents/skills/omarchy-desktop/SKILL.md`. Terms: [`../../TERMS.md`](../../TERMS.md).
 
 **Status:** draft. This is process + tests, not a tool repo. Upstream GUIs (FreeCAD, KiCad, ParaView) should meet it; LET-incubated GUIs **must**.
 

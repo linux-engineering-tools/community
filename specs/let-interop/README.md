@@ -1,6 +1,6 @@
 # Spec: `let-interop`
 
-Open-format **round-trip test suite**. Not a CAD. Not a clone of a commercial translator.
+Open-format **round-trip test suite** (export, import, compare). Not computer-aided design (CAD). Not a clone of a commercial translator. Terms: [`../../TERMS.md`](../../TERMS.md).
 
 **Status:** incubating — [linux-engineering-tools/let-interop](https://github.com/linux-engineering-tools/let-interop). Requirements [#8](https://github.com/linux-engineering-tools/community/issues/8), [#14](https://github.com/linux-engineering-tools/community/issues/14), [#15](https://github.com/linux-engineering-tools/community/issues/15). RFC [#21](https://github.com/linux-engineering-tools/community/issues/21). Docs-first: CLI contract and `--dry-run` stub. Kernels stay upstream.
 

@@ -1,6 +1,6 @@
-# Civil / structural / geospatial FOSS on Linux
+# Civil / structural / geospatial free and open-source software (FOSS) on Linux
 
-Contribute **upstream** before incubating. `domain:civil` plus `interop` for open BIM.
+Contribute **upstream** before incubating. `domain:civil` plus interoperability (`interop`) for open building information modelling (BIM). Terms: [`../TERMS.md`](../TERMS.md).
 
 Native Linux **does not** currently provide lossless edit of vendor BIM binaries. The professional bar here is **IFC** (ISO 16739) and open GIS, not `.rvt` / `.pln` editability.
 

@@ -1,12 +1,12 @@
 # Roadmap from the Omarchy engineering-suite extracts
 
-Research extracts (2026-08-21) in the Omarchy thought-process project converge on one architecture:
+Research extracts (2026-08-21) in the Omarchy thought-process project converge on one architecture. Terms: [`TERMS.md`](TERMS.md).
 
 **Headless Core** (analysis, mesh, solve, script) is already strong on Linux.  
-**Spatial Shell** (parametric geometry, BIM, high-end layout) is the bottleneck.  
+**Spatial Shell** (parametric geometry, building information modelling (BIM), high-end layout) is the bottleneck.  
 **Greenfield** is a thin set: safety-certified automation, some regulatory biomedical/nuclear workflows, and a few interchange or high-frequency electronics jobs.
 
-LET does **not** incubate a repo per catalog entry. Existing FOSS stays upstream (`catalog/`). New org repos wait on a spec + RFC (`agents/skills/incubate-tool/SKILL.md`).
+Linux Engineering Tools (LET) does **not** incubate a repo per catalog entry. Existing free and open-source software (FOSS) stays **upstream** (`catalog/`). New org repos wait on a specification plus a request for comments (RFC) (`agents/skills/incubate-tool/SKILL.md`).
 
 This file is the fan-out: what to adopt, what to send upstream, and which **jobs** might later become LET tools.
 
@@ -20,7 +20,7 @@ Accountable human for agent-drafted items: [@calledtoconstruct](https://github.c
 | **Fork-or-port** | Capability exists elsewhere or is incomplete on Linux | Prefer upstream or a documented port RFC; no silent forks |
 | **Greenfield** | No reusable OSS kernel for the **job** | Requirement → spec → RFC → incubate |
 
-TUI / library-first for solvers and pipelines. GUI only where spatial editing or map/schematic layout is the job. Shared kernels (OpenCASCADE, Gmsh, PETSc/Trilinos/Sundials, VTK, ngspice, HDF5, STEP/IFC) are dependencies, not LET products.
+Text user interface (TUI) / library-first for solvers and pipelines. Graphical user interface (GUI) only where spatial editing or map/schematic layout is the job. Shared kernels (Open CASCADE Technology, Gmsh, PETSc/Trilinos/Sundials, Visualization Toolkit (VTK), ngspice, HDF5, ISO 10303 STEP / Industry Foundation Classes (IFC)) are dependencies, not LET products.
 
 Compiled native tools (C, C++, Rust, Go) for anything LET incubates. No web-app-as-the-product.
 

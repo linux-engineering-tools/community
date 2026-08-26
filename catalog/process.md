@@ -1,6 +1,6 @@
-# Process / chemical FOSS on Linux
+# Process / chemical free and open-source software (FOSS) on Linux
 
-Steady-state thermo, kinetics, and plant-oriented simulation. Contribute **upstream**.
+Steady-state thermo, kinetics, and plant-oriented simulation. Contribute **upstream**. Terms: [`../TERMS.md`](../TERMS.md).
 
 Plant-wide **layout CAD** and many unit-operation GUIs are still gaps; describe those jobs with DEXPI / ISO 15926 / CAPE-OPEN, not vendor flowsheet clones.
 

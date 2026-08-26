@@ -1,6 +1,6 @@
-# Data / PDM FOSS on Linux
+# Data / product data management (PDM) free and open-source software (FOSS) on Linux
 
-Parts, stock, BOM, revisions, and open-format interchange. Contribute **upstream** before incubating. See [`SPACES.md`](../SPACES.md).
+Parts, stock, bill of materials (BOM), revisions, and open-format interchange. Contribute **upstream** before incubating. See [`SPACES.md`](../SPACES.md). Terms: [`../TERMS.md`](../TERMS.md).
 
 `pdm` is revisioned CAD/BOM/change records. `interop` is proving open formats round-trip (STEP, IFC, DXF, IPC-2581). They are not a vendor PDM clone.
 

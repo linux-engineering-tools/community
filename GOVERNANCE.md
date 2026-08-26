@@ -1,6 +1,6 @@
 # Governance
 
-Process for this organization. No other charter.
+Process for this organization. No other charter. Terms: [`TERMS.md`](TERMS.md).
 
 ## Repositories
 

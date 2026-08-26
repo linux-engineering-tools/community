@@ -1,6 +1,6 @@
-# Control / automation FOSS on Linux
+# Control / automation free and open-source software (FOSS) on Linux
 
-Industrial I/O, open PLC runtimes, and motion. Contribute **upstream**.
+Industrial input/output (I/O), open programmable-logic-controller (PLC) runtimes, and motion. Contribute **upstream**. Terms: [`../TERMS.md`](../TERMS.md).
 
 Vendor **safety** runtimes and certified SIL stacks are not LET clones. Jobs must cite IEC 61131-3, IEC 61499, EtherCAT (ETG), Modbus, or OPC UA.
 
