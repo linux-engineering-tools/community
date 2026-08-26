@@ -1,10 +1,10 @@
-# Electronics FOSS on Linux
+# Electronics free and open-source software (FOSS) on Linux
 
-Contribute **upstream** to these before incubating a LET tool. This map is the answer to “the tools exist but I cannot find them.”
+Contribute **upstream** to these before incubating a Linux Engineering Tools (LET) tool. This map is the answer to “the tools exist but I cannot find them.” Terms: [`../TERMS.md`](../TERMS.md).
 
-Standards to prefer in requirements: SCPI / IEEE 488.2, LXI, USBTMC, GPIB (IEEE 488.1), USB (usbmon), JTAG/SWD. Do not file clone-specs of vendor bench GUIs.
+Standards to prefer in requirements: Standard Commands for Programmable Instruments (SCPI / IEEE 488.2), LAN eXtensions for Instrumentation (LXI), USB Test and Measurement Class (USBTMC), General Purpose Interface Bus (GPIB, IEEE 488.1), USB (usbmon), Joint Test Action Group (JTAG) / Serial Wire Debug (SWD). Do not file clone-specs of vendor bench graphical user interfaces.
 
-## Design (EDA)
+## Design (electronic design automation, EDA)
 
 | Project | Job |
 |---|---|

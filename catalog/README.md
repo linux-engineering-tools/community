@@ -1,16 +1,16 @@
-# Existing FOSS (contribute here first)
+# Existing free and open-source software (FOSS)
 
-LET does not replace these. File a requirement only if the job is still unmet after the catalog for that **space**. Prefer patches **upstream**.
+Linux Engineering Tools (LET) does not replace these. File a requirement only if the job is still unmet after the catalog for that **space**. Prefer patches **upstream** (the existing project). Terms: [`../TERMS.md`](../TERMS.md).
 
 Maps, not rankings. Layout follows [`SPACES.md`](../SPACES.md).
 
 | Space | Catalog |
 |---|---|
-| Mechanical (`cad`, `mesh`, `drawings`) | [`mechanical.md`](mechanical.md) |
-| Fabrication (`cam`, `cnc`, `print`) | [`fabrication.md`](fabrication.md) |
-| Electronics (`eda`, `bench`) | [`electronics.md`](electronics.md) |
-| Simulation (`fea`, `cfd`) | [`simulation.md`](simulation.md) |
-| Data (`pdm`, `interop`) | [`data.md`](data.md) |
+| Mechanical (computer-aided design (`cad`), mesh, drawings) | [`mechanical.md`](mechanical.md) |
+| Fabrication (computer-aided manufacturing (`cam`), computer numerical control (`cnc`), print) | [`fabrication.md`](fabrication.md) |
+| Electronics (electronic design automation (`eda`), bench) | [`electronics.md`](electronics.md) |
+| Simulation (finite element analysis (`fea`), computational fluid dynamics (`cfd`)) | [`simulation.md`](simulation.md) |
+| Data (product data management (`pdm`), interoperability (`interop`)) | [`data.md`](data.md) |
 | Desktop (`desktop`) | [`desktop.md`](desktop.md) |
 | Civil / geospatial (`civil`) | [`civil.md`](civil.md) |
 | Process / chemical (`process`) | [`process.md`](process.md) |

@@ -5,7 +5,7 @@ description: Graduate a LET spec into a new org repository. Use when creating a 
 
 # Incubate a tool
 
-A new repository is a last resort. Do this only after a maintainer decision on an RFC.
+A new repository is a last resort. Do this only after a maintainer decision on a request for comments (RFC). Spell out a term on first use in the new README, or link community [`TERMS.md`](https://github.com/linux-engineering-tools/community/blob/main/TERMS.md).
 
 ## Gates (all required)
 

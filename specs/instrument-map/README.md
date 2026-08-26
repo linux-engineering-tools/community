@@ -1,6 +1,6 @@
-# Spec draft: instrument identity → existing FOSS
+# Spec draft: instrument identity → existing free and open-source software (FOSS)
 
-Requirement [#10](https://github.com/linux-engineering-tools/community/issues/10). Human catalog: [`../../catalog/electronics.md`](../../catalog/electronics.md).
+Requirement [#10](https://github.com/linux-engineering-tools/community/issues/10). Human catalog: [`../../catalog/electronics.md`](../../catalog/electronics.md). Terms: [`../../TERMS.md`](../../TERMS.md).
 
 **Status:** draft. Prefer a structured file **in this repo** plus a thin CLI. New instrument support still belongs in **libsigrok** or **lxi-tools**, not a LET driver tree.
 

@@ -5,17 +5,17 @@ description: File or triage a LET requirements issue. Use when opening, rewritin
 
 # File or triage a requirement
 
-Use the **Requirement** issue form in this repo. Do not open a blank issue.
+Use the **Requirement** issue form in this repo. Do not open a blank issue. Spell out a term on first use, or link [`TERMS.md`](../../../TERMS.md).
 
 ## Write the issue
 
 Required substance (map to form fields):
 
 - **Job** — who, what they are finishing, how often. No commercial feature names.
-- **Inputs/outputs/standards** — published specs (STEP, DXF, ISO GPS, ASME Y14.5, IPC, G-code dialect). Not vendor-internal formats.
-- **Acceptance tests** — observable, preferably CLI + fixtures.
-- **Existing FOSS** — from `catalog/README.md`. Say whether this should go **upstream**.
-- **GUI?** — if yes, the Omarchy desktop contract applies (`agents/skills/omarchy-desktop/SKILL.md`) before incubation.
+- **Inputs/outputs/standards** — published specs (ISO 10303 STEP, Drawing Exchange Format (DXF), ISO geometrical product specifications (GPS), ASME Y14.5, IPC, G-code dialect). Not vendor-internal formats.
+- **Acceptance tests** — observable, preferably command-line interface (CLI) + fixtures (in-tree sample files).
+- **Existing free and open-source software (FOSS)** — from `catalog/README.md`. Say whether this should go **upstream**.
+- **Graphical user interface (GUI)?** — if yes, the Omarchy desktop contract applies (`agents/skills/omarchy-desktop/SKILL.md`) before incubation.
 
 Title: `[req] ` plus the job in a few words.
 

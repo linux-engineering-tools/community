@@ -1,6 +1,6 @@
 # Contributing
 
-This repository tracks **requirements** and **RFCs**. Code for tools lives in other repos after a spec graduates. Read this file before opening an issue or pull request.
+This repository tracks **requirements** and **requests for comments (RFCs)**. Code for tools lives in other repos after a specification graduates. Read this file before opening an issue or pull request. Short forms: [`TERMS.md`](TERMS.md).
 
 Agents: start at [`AGENTS.md`](AGENTS.md) and the matching skill under `agents/skills/`.
 
@@ -13,7 +13,7 @@ Use the **Requirement** issue form. Accepted items show up on the [Requirements 
 - Who needs it and what job they are doing
 - Inputs and outputs, named as **open or published standards** (file formats, ISO/ASME/IEC/IPC numbers, G-code dialects)
 - Observable acceptance tests
-- Existing FOSS that almost does it, and why it does not (see [`catalog/README.md`](catalog/README.md))
+- Existing free and open-source software (FOSS) that almost does it, and why it does not (see [`catalog/README.md`](catalog/README.md))
 - Whether this should be an upstream patch or a new tool, and why
 
 ### Do not include

@@ -1,6 +1,6 @@
-# Fabrication FOSS on Linux
+# Fabrication free and open-source software (FOSS) on Linux
 
-CAM, CNC machine control, and 3D printing. Contribute **upstream** before incubating. See [`SPACES.md`](../SPACES.md).
+Computer-aided manufacturing (CAM), computer numerical control (CNC) machine control, and 3D printing. Contribute **upstream** before incubating. See [`SPACES.md`](../SPACES.md). Terms: [`../TERMS.md`](../TERMS.md).
 
 `cam` is generating toolpaths from solids. `cnc` is running the machine. `print` is slice / host / firmware for additive.
 

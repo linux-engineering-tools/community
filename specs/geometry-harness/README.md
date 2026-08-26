@@ -1,6 +1,6 @@
 # Spec draft: geometry-operation reliability harness
 
-Requirement [#6](https://github.com/linux-engineering-tools/community/issues/6). **Upstream-first:** Open CASCADE Technology and FreeCAD. This is not a kernel. Do not incubate a B-rep replacement.
+Requirement [#6](https://github.com/linux-engineering-tools/community/issues/6). **Upstream-first:** Open CASCADE Technology and FreeCAD. This is not a geometry kernel. Do not incubate a boundary-representation (B-rep) replacement. Terms: [`../../TERMS.md`](../../TERMS.md).
 
 **Status:** draft — public test contract so LET can contribute fixtures upstream.
 

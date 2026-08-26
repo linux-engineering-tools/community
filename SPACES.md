@@ -1,15 +1,15 @@
 # Spaces
 
-How LET is partitioned. One organization, one requirements repo, several **spaces**. Do not create a repo per topic until a space has its own maintainers and sustained traffic.
+How Linux Engineering Tools (LET) is partitioned. One organization, one requirements repo, several **spaces**. Do not create a repo per topic until a space has its own maintainers and sustained traffic. Short forms: [`TERMS.md`](TERMS.md).
 
 ## Why spaces
 
-3D CAD, mesh modelling, 3D printing, CNC, EDA, and bench instruments are different jobs and different people. One undifferentiated issue list buries all of them. One repo per topic at this stage creates empty rooms and duplicated process.
+3D computer-aided design (CAD), mesh modelling, 3D printing, computer numerical control (CNC), electronic design automation (EDA), and bench instruments are different jobs and different people. One undifferentiated issue list buries all of them. One repo per topic at this stage creates empty rooms and duplicated process.
 
 | Layer | What it is | What it is not |
 |---|---|---|
 | **Org** | `linux-engineering-tools` | A second GitHub org per topic |
-| **Repo** | `community` for requirements, RFCs, catalog, skills | A CAD repo, a print repo, … until incubation |
+| **Repo** | `community` for requirements, requests for comments (RFCs), catalog, skills | A CAD repo, a print repo, … until incubation |
 | **Space** | Discussion category + project view | A political or identity grouping |
 | **Domain** | Fine-grained issue label (`cad`, `print`, `bench`, …) | A new tracker |
 | **Incubated tool** | Its own org repo after a spec | A place to file unrelated requirements |
@@ -22,17 +22,17 @@ How LET is partitioned. One organization, one requirements repo, several **space
 | **Fabrication** | `cam`, `cnc`, `print` | Toolpaths, CNC control, 3D-print slice/host |
 | **Electronics** | `eda`, `bench` | Schematic/PCB, instruments, USB/JTAG repair |
 | **Simulation** | `fea`, `cfd` | Solvers and pre/post |
-| **Data** | `pdm`, `interop` | Revisions, BOM, open-format round-trip |
+| **Data** | `pdm`, `interop` | Revisions, bill of materials (BOM), open-format round-trip |
 | **Desktop** | `desktop` | Omarchy / Wayland contract (cross-cutting) |
-| **Civil** | `civil` | BIM / IFC, GIS, structural |
+| **Civil** | `civil` | Building information modelling (BIM) / Industry Foundation Classes (IFC), geographic information systems (GIS), structural |
 | **Process** | `process` | Flowsheet, DEXPI / ISO 15926, kinetics |
-| **Automation** | `automation` | IEC 61131-3 tests, EtherCAT, OPC UA |
-| **Scientific** | `scientific` | Biomedical imaging, nuclear **research**, HPC glue |
+| **Automation** | `automation` | IEC 61131-3 tests, EtherCAT, Open Platform Communications Unified Architecture (OPC UA) |
+| **Scientific** | `scientific` | Biomedical imaging, nuclear **research**, high-performance computing (HPC) glue |
 | **Other** | `other` | Until a space earns its own row |
 
 Discussion categories already exist for Mechanical, Fabrication, Electronics, Simulation, Data, and Desktop. Civil, process, automation, and scientific stay in **Q&A** (or the closest existing category) until traffic warrants a room. Do not add GitHub orgs.
 
-`cad` is parametric engineering CAD. `mesh` is polygon/sculpt/subdivision modelling (the Blender-class job). They are not the same requirement. `cam` is toolpath generation; `cnc` is talking to the machine (LinuxCNC-class). `print` is slice, host, and printer firmware on Linux.
+`cad` is parametric engineering CAD (feature history and dimensions). `mesh` is polygon/sculpt/subdivision modelling (the Blender-class job). They are not the same requirement. `cam` is computer-aided manufacturing — toolpath generation; `cnc` is talking to the machine (LinuxCNC-class). `print` is slice, host, and printer firmware on Linux.
 
 Catalog pages: [`catalog/README.md`](catalog/README.md). Fan-out plan: [`ROADMAP.md`](ROADMAP.md).
 

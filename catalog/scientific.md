@@ -1,6 +1,6 @@
-# Scientific, biomedical, and nuclear FOSS on Linux
+# Scientific, biomedical, and nuclear free and open-source software (FOSS) on Linux
 
-Research-grade tools. **Regulatory deeming** (medical device, nuclear licensing) is a process gap, not a missing solver. Do not incubate a certified replacement for a licensed code.
+Research-grade tools. **Regulatory deeming** (medical device, nuclear licensing) is a process gap, not a missing solver. Do not incubate a certified replacement for a licensed code. Terms: [`../TERMS.md`](../TERMS.md).
 
 ## Biomedical imaging
 

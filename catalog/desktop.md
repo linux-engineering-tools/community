@@ -1,6 +1,6 @@
 # Desktop / Omarchy notes
 
-Wayland notes for head-start GUIs. Not a ranking. The contract is [`../agents/skills/omarchy-desktop/SKILL.md`](../agents/skills/omarchy-desktop/SKILL.md) and [`../specs/omarchy-desktop/`](../specs/omarchy-desktop/).
+Wayland notes for head-start graphical user interfaces (GUIs). Not a ranking. The contract is [`../agents/skills/omarchy-desktop/SKILL.md`](../agents/skills/omarchy-desktop/SKILL.md) and [`../specs/omarchy-desktop/`](../specs/omarchy-desktop/). Terms: [`../TERMS.md`](../TERMS.md).
 
 These are **notes**, not test reports. Do not claim Omarchy verification unless it was run on that stack.
 

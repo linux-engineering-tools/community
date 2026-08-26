@@ -1,6 +1,6 @@
-# Mechanical design FOSS on Linux
+# Mechanical design free and open-source software (FOSS) on Linux
 
-Parametric CAD, mesh modelling, and drawings. Contribute **upstream** before incubating. See [`SPACES.md`](../SPACES.md).
+Parametric computer-aided design (CAD), mesh modelling, and drawings. Contribute **upstream** before incubating. See [`SPACES.md`](../SPACES.md). Terms: [`../TERMS.md`](../TERMS.md).
 
 `cad` ≠ `mesh`. A solid with a feature history is not a triangle sculpture.
 
