@@ -2,7 +2,7 @@
 
 | Id | Input | Expect | Job |
 |---|---|---|---|
-| `fea-cantilever` | `fea/cantilever.step` | `fea/cantilever.json` | Short cantilever solid; CalculiX or Elmer deck; `--dry-run` must succeed. Live solve may fill `max_displacement`. |
+| `fea-cantilever` | `fea/cantilever.step` | `fea/cantilever.json` | Short cantilever solid; CalculiX or Elmer deck; `--dry-run` must succeed. Live solve may fill `max_displacement`. FreeCAD path is `FreeCADCmd fea/cantilever.py` (FEM Python API), not argv on the executable. |
 | `cfd-lid-cavity` | `cfd/lid-cavity/` (OpenFOAM case tree, documented version) | `cfd/lid-cavity.json` | Lid-driven cavity; `--dry-run` validates dictionaries and mesh presence. |
 
 Expect files validate against [`../summary.schema.json`](../summary.schema.json).

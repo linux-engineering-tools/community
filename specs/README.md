@@ -21,7 +21,7 @@ Drafts. **No org repo until RFC + maintainer decision.** `let-interop` is past t
 |---|---|---|---|
 | [`omarchy-desktop/`](omarchy-desktop/) | Wayland GUI contract (remappable keybindings) | #1 | — (not a tool) |
 | [`geometry-harness/`](geometry-harness/) | Open CASCADE Technology (OCCT) / FreeCAD operation reliability tests | #6 | — (upstream-first) |
-| [`let-interop/`](let-interop/) | Open-format round-trip harness ([repo](https://github.com/linux-engineering-tools/let-interop)) | #8, #14, #15 | #21 (incubating) |
+| [`let-interop/`](let-interop/) | Open-format harness: STEP/DXF/IPC-2581 round-trip, IFC parse + IfcDiff ([repo](https://github.com/linux-engineering-tools/let-interop)) | #8, #14, #15 | #21 (incubating) |
 | [`let-solver-pipe/`](let-solver-pipe/) | CLI prepare/inspect pipeline over existing solvers | #7 | #22 |
 | [`instrument-map/`](instrument-map/) | Instrument identity → existing free and open-source software | #10 | — (catalog + thin CLI) |
 

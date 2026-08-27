@@ -62,7 +62,7 @@ These jobs should land in the named projects unless they decline.
 | Instrument identity map | sigrok, lxi-tools, catalog | #10 | needs-spec ([spec](specs/instrument-map/)) |
 | Time-aligned PSU + DMM log | sigrok, lxi-tools | #11 | upstream-first |
 | USB host capture workflow | usbmon, Wireshark | #12 | upstream-first |
-| IFC structural round-trip | IfcOpenShell, Bonsai, FreeCAD Arch | #14 | upstream-first |
+| IFC parse + IfcDiff (geometry rewrite in Bonsai) | IfcOpenShell, Bonsai | #14 | upstream-first |
 | IPC-2581 PCB manufacturing export | KiCad | #15 | upstream-first |
 | S-parameter / frequency-domain extraction | openEMS, scikit-rf, Qucs-S, ngspice | #16 | upstream-first |
 | Process flowsheet on DEXPI / ISO 15926 | DWSIM, COCO | #17 | needs-spec |
@@ -70,7 +70,7 @@ These jobs should land in the named projects unless they decline.
 | DICOM structure/dose summary | DCMTK, Orthanc | #19 | upstream-first |
 | ParaView / solver viz on Wayland | ParaView, VTK | #20 | upstream-first |
 
-RFCs [#21](https://github.com/linux-engineering-tools/community/issues/21) (`let-interop`) and [#22](https://github.com/linux-engineering-tools/community/issues/22) (`let-solver-pipe`) stay `needs-triage` until the copy-paste asks in each spec’s `upstream-ask.md` are posted and answered (or timed out in a maintainer note).
+RFCs [#21](https://github.com/linux-engineering-tools/community/issues/21) (`let-interop`) and [#22](https://github.com/linux-engineering-tools/community/issues/22) (`let-solver-pipe`): asks posted. Replies so far: IfcOpenShell (parse + IfcDiff, not native-model round-trip), FreeCAD FEM (`FreeCADCmd script.py`, not argv). OCCT assigned, no comment. Elmer silent. Details in each spec's `upstream-ask.md`.
 
 ## Candidate LET incubations (after spec + RFC)
 
@@ -100,7 +100,7 @@ Native Linux GUIs do not yet match high-fidelity parametric BIM or advanced surf
 1. Expand the catalog so “does it exist?” is answered in-repo. **Done** (including data, desktop, CAM sim, kernels).
 2. File remaining **requirements** in capability language. **Done** (#14–#20). Stop filing more until these are triaged.
 3. Write public **specs** for glue we might own (`let-interop`, `let-solver-pipe`) plus #1 / #6 / #10. **Drafts in `specs/`.**
-4. **Ask upstream** using `specs/*/upstream-ask.md`. Record URLs on RFC #21 and #22.
+4. **Ask upstream** using `specs/*/upstream-ask.md`. Record URLs on RFC #21 and #22. **Posted.** IfcOpenShell and FreeCAD FEM replies incorporated in the specs.
 5. RFC + incubate those two **only** after a maintainer decision and a documented upstream answer (or timeout). **`let-interop` is incubating** (docs-first). `let-solver-pipe` is not.
 6. Revisit greenfield rows (`let-sparam`, `let-dexpi`, `let-61131-test`, `let-dicom-report`) when a space has a named maintainer.
 

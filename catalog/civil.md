@@ -8,8 +8,8 @@ Native Linux **does not** currently provide lossless edit of vendor BIM binaries
 
 | Project | Job |
 |---|---|
-| [IfcOpenShell](https://ifcopenshell.org/) | IFC parse, geometry, Python API |
-| [Bonsai](https://bonsaibim.org/) (Blender) | IFC authoring in Blender |
+| [IfcOpenShell](https://ifcopenshell.org/) | IFC parse, geometry, Python API. Comparison: [IfcDiff](https://docs.ifcopenshell.org/ifcdiff.html). No non-IFC native model. |
+| [Bonsai](https://bonsaibim.org/) (Blender) | IFC authoring in Blender, including geometric representation rewrite |
 | [FreeCAD](https://www.freecad.org/) Arch / BIM | Architectural / BIM solids |
 | [Code_Aster](https://code-aster.org/) | Structural analysis |
 | [FRAME3DD](https://frame3dd.sourceforge.net/) | Frame analysis |
