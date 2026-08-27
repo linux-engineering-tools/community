@@ -22,6 +22,8 @@ Ask whether `ccx` (or a documented wrapper) can validate a deck and emit a struc
 
 Title: `CLI JSON summary for a documented Elmer case (dry-run)`
 
+**Posted:** https://github.com/ElmerCSC/elmerfem/issues/885 — no reply yet.
+
 ## OpenFOAM
 
 Title: `Stable dry-run of a case that reports mesh/dict errors with file:line`
@@ -37,6 +39,10 @@ Title: `STEP → .msh in batch with non-zero exit and a parseable error`
 Title: `Headless FEM pipeline (FreeCADCmd) that writes solver decks without the GUI`
 
 If FreeCAD FEM will own the glue, LET will not incubate `let-solver-pipe`.
+
+**Posted (with STEP/DXF):** https://github.com/FreeCAD/FreeCAD/discussions/32183
+
+**Reply (ickby, 2026-08-27):** Mesh and solver setup cannot be done as command-line arguments on the FreeCAD executable. `FreeCADCmd` is a Python interpreter. Run `FreeCADCmd script.py`; the FEM workbench already exposes the needed API. LET treats that as the FreeCAD contract. A `let-solver-pipe` repo, if incubated, only calls that script (or CalculiX / Elmer / OpenFOAM directly).
 
 ## If they accept
 

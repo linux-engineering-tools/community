@@ -7,7 +7,7 @@ Expect JSON must validate against [`../report.schema.json`](../report.schema.jso
 | Id | File (generated) | Expect | How |
 |---|---|---|---|
 | `step-two-instances` | `step/two-instances.step` | `step/two-instances.json` | CadQuery or OCCT: two solid instances in one assembly, millimetres. Counts: `solids >= 1`, `instances == 2`. |
-| `ifc-beam-column` | `ifc/beam-column.ifc` | `ifc/beam-column.json` | IfcOpenShell: one `IfcBeam`, one `IfcColumn`, one connection, one property set. |
+| `ifc-beam-column` | `ifc/beam-column.ifc` | `ifc/beam-column.json` | IfcOpenShell parse: one `IfcBeam`, one `IfcColumn`, one connection, one property set. Comparison is [IfcDiff](https://docs.ifcopenshell.org/ifcdiff.html) (`type` + `property` relationships), not a native-model round-trip. |
 | `dxf-rect` | `dxf/rect.dxf` | `dxf/rect.json` | LibreCAD or a documented DXF subset: one closed rectangle, length checks. |
 | `ipc2581-two-layer` | `pcb/two-layer.xml` | `pcb/two-layer.json` | KiCad (or Horizon) export of a two-layer fixture board: layer count, net count, drill hits. |
 

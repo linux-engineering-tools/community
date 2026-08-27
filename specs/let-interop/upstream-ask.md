@@ -23,6 +23,8 @@ Ask: will OCCT host (or accept) a small public fixture suite that:
 
 This is a harness, not a request to reimplement the kernel. If you already have this as `DRAWEXE` tests, a pointer is enough and we will not duplicate it.
 
+**Posted:** https://github.com/Open-Cascade-SAS/OCCT/issues/1508 (labeled Enhancement / Community, assigned `dpasukhi`). No written reply yet.
+
 ## FreeCAD (STEP / DXF host)
 
 **Where:** FreeCAD GitHub issue, linking the OCCT ask.
@@ -30,6 +32,10 @@ This is a harness, not a request to reimplement the kernel. If you already have 
 Title: `CLI round-trip report for STEP AP242 and DXF fixtures`
 
 Body: same job as above, plus DXF entity counts, invoked without the GUI (`FreeCADCmd`). If FreeCAD prefers this to live entirely in OCCT tests, say so.
+
+**Posted (combined with FEM):** https://github.com/FreeCAD/FreeCAD/discussions/32183
+
+**Reply (ickby, 2026-08-27):** FEM (task 2) is not argv on the executable. `FreeCADCmd` is a Python interpreter; run `FreeCADCmd script.py` using the FEM workbench Python API. Task 1 (STEP/DXF report) was not answered. Recorded on the solver-pipe ask too.
 
 ## IfcOpenShell (IFC)
 
@@ -39,6 +45,10 @@ Title: `CLI IFC4 round-trip: entity counts and placements as JSON`
 
 Body: fixture with IfcBeam + IfcColumn + one connection + one property set. Import → export → compare counts, GlobalIds, placements. LET issue: https://github.com/linux-engineering-tools/community/issues/14
 
+**Posted:** https://github.com/IfcOpenShell/IfcOpenShell/discussions/9363
+
+**Reply (aothms, 2026-08-27):** IfcOpenShell has no non-IFC native model; it parses, it does not import/export through a separate CAD kernel. Bonsai rewrites geometric representations. Entity-count comparison is too crude. They asked for the failure modes. LET now uses parse + [IfcDiff](https://docs.ifcopenshell.org/ifcdiff.html) (geometry, property, type). Failure modes: dropped `IfcRelConnects*`, dropped property set, placement/GlobalId change with counts unchanged. Geometry rewrite stays in Bonsai.
+
 ## KiCad (IPC-2581)
 
 **Where:** KiCad GitLab, manufacturing export.
@@ -46,6 +56,8 @@ Body: fixture with IfcBeam + IfcColumn + one connection + one property set. Impo
 Title: `CLI check of IPC-2581 export against fixture JSON (layers, nets, drills)`
 
 Body: LET issue https://github.com/linux-engineering-tools/community/issues/15. Prefer IPC-2581; Gerber X3 + Excellon as documented fallback. No vendor CAM database.
+
+**Not posted.** `kicad-cli pcb export ipc2581` already exists; remaining job is a harness check.
 
 ## If they accept
 

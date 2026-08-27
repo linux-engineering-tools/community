@@ -23,9 +23,12 @@ Binary not named `let`.
 let-solver-pipe --help
 let-solver-pipe run --solver calculix --geom fixtures/fea/cantilever.step --json summary.json
 let-solver-pipe run --solver openfoam --case fixtures/cfd/lid-cavity --dry-run --json summary.json
+let-solver-pipe run --host freecad --script fixtures/fea/cantilever.py --json summary.json
 ```
 
 `--dry-run` writes or validates the deck and mesh, prints JSON, and does **not** start a long solve.
+
+`--host freecad` means `FreeCADCmd script.py`. FreeCAD does not expose mesh and solver setup as executable argv. The script uses the FEM workbench Python API (ickby, [discussion #32183](https://github.com/FreeCAD/FreeCAD/discussions/32183)). LET must not invent a flag soup for that job.
 
 ### Exit codes
 
@@ -48,6 +51,7 @@ Schema: [`summary.schema.json`](summary.schema.json). Required: `ok`, `solver`, 
 ## Acceptance tests
 
 - FEA fixture: STEP → mesh → CalculiX or Elmer deck → `--dry-run` exits 0; JSON names the solver.
+- FreeCAD path: `FreeCADCmd fixtures/fea/cantilever.py` writes a documented CalculiX or Elmer deck without the GUI. Not argv on the FreeCAD executable.
 - CFD fixture: OpenFOAM case → `--dry-run` validates; JSON `ok: true`.
 - Optional live solve is not required in CI (too long / too many packages). Document `LET_SOLVER_LIVE=1` for a local run.
 - Failures name the solver in `error.solver`.
@@ -55,7 +59,7 @@ Schema: [`summary.schema.json`](summary.schema.json). Required: `ok`, `solver`, 
 
 ## Upstream check
 
-Prefer FreeCAD FEM, CalculiX, Elmer, Code_Aster, OpenFOAM, Gmsh. Incubate only as thin glue if they will not take a shared CLI contract.
+Prefer FreeCAD FEM, CalculiX, Elmer, Code_Aster, OpenFOAM, Gmsh. FreeCAD FEM glue, if used, is a documented Python script under `FreeCADCmd`, not a new CLI on the executable. Incubate only as thin glue across solvers they will not take.
 
 Asks: [`upstream-ask.md`](upstream-ask.md). Record URLs on RFC #22.
 
