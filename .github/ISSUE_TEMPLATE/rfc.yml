@@ -35,7 +35,7 @@ body:
     id: spec
     attributes:
       label: Spec
-      description: Link to specs/… or paste a first draft (standards, CLI, tests, Omarchy/Wayland if GUI).
+      description: Link to specs/… or paste a first draft (standards, CLI, tests, Wayland and remappable keybindings if GUI).
     validations:
       required: true
   - type: checkboxes

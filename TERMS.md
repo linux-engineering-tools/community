@@ -112,8 +112,9 @@ Linux Engineering Tools (LET) is a **requirements and incubation** board, not a 
 | Term | Meaning here |
 |---|---|
 | **Wayland** | Modern Linux display protocol. An **X11-only** path is not the supported Linux path here. |
-| **Omarchy** | Arch Linux desktop distribution using **Hyprland** (a Wayland compositor). Target for LET graphical tools. |
-| **Super key** | The key often labelled with a logo (Windows / Command / Super). On Omarchy it belongs to the compositor, not to in-app shortcuts. |
+| **Omarchy** | Arch Linux desktop distribution using **Hyprland** (a Wayland compositor). A test desktop for LET graphical tools, and the example of simple keybinding config files. |
+| **Super key** | The key often labelled with a logo (Windows / Command / Super). Most Linux desktops already use it. LET defaults use Ctrl / Shift / Alt; users remap via a keybinding file if a chord still collides. |
+| **Keybinding file** | A small user-editable text or JSON file that maps actions to chords. Omarchy's `~/.config/hypr/bindings.lua` is the example of this style. |
 | **HiDPI** | High pixel-density displays; apps should follow session scale. |
 | **Wine / Proton** | Windows compatibility layers. A footnote, never “the Linux version.” |
 

@@ -13,7 +13,7 @@ A new repository is a last resort. Do this only after a maintainer decision on a
 2. **Public spec** under `specs/<name>/` (problem, standards, CLI, tests, license)
 3. **Upstream check** documented: existing project named, asked, declined or wrong home (see `catalog/README.md`)
 4. **RFC** issue approved by a maintainer
-5. If GUI: desktop contract in the spec (`agents/skills/omarchy-desktop/SKILL.md`)
+5. If GUI: desktop contract in the spec (`agents/skills/omarchy-desktop/SKILL.md`): Wayland plus a user-editable keybinding file
 
 If any gate is missing, stop and file or finish that work here. Do not create the repo.
 

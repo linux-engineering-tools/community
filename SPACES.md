@@ -23,7 +23,7 @@ How Linux Engineering Tools (LET) is partitioned. One organization, one requirem
 | **Electronics** | `eda`, `bench` | Schematic/PCB, instruments, USB/JTAG repair |
 | **Simulation** | `fea`, `cfd` | Solvers and pre/post |
 | **Data** | `pdm`, `interop` | Revisions, bill of materials (BOM), open-format round-trip |
-| **Desktop** | `desktop` | Omarchy / Wayland contract (cross-cutting) |
+| **Desktop** | `desktop` | Wayland / remappable keybindings (cross-cutting) |
 | **Civil** | `civil` | Building information modelling (BIM) / Industry Foundation Classes (IFC), geographic information systems (GIS), structural |
 | **Process** | `process` | Flowsheet, DEXPI / ISO 15926, kinetics |
 | **Automation** | `automation` | IEC 61131-3 tests, EtherCAT, Open Platform Communications Unified Architecture (OPC UA) |
@@ -58,7 +58,7 @@ The API cannot add discussion categories. In the `community` repo: **Settings â†
 | Electronics | Open-ended | EDA, bench, repair |
 | Simulation | Open-ended | FEA, CFD |
 | Data | Open-ended | PDM, interop |
-| Desktop | Open-ended | Omarchy / Wayland |
+| Desktop | Open-ended | Wayland / remappable keybindings |
 | Q&A | Q&A | Keep the default; use when the space is unclear |
 | Announcements | Announcements | Keep |
 

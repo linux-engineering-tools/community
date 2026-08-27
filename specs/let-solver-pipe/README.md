@@ -61,7 +61,7 @@ Asks: [`upstream-ask.md`](upstream-ask.md). Record URLs on RFC #22.
 
 ## GUI
 
-Optional later; must wrap this CLI. Omarchy contract if a GUI exists ([`../omarchy-desktop/`](../omarchy-desktop/)).
+Optional later; must wrap this CLI. Desktop contract if a GUI exists ([`../omarchy-desktop/`](../omarchy-desktop/)).
 
 ## License
 

@@ -90,10 +90,10 @@ body:
   - type: dropdown
     id: gui
     attributes:
-      label: Does this need a GUI on Omarchy?
+      label: Does this need a graphical user interface (GUI)?
       options:
         - "No — CLI / library / data only"
-        - "Yes — desktop contract applies (Wayland, no Super-key defaults)"
+        - "Yes — desktop contract applies (Wayland, remappable keybindings)"
         - Not sure
     validations:
       required: true

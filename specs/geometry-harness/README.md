@@ -65,7 +65,7 @@ Repeat rebuild N times (document N, start with 3) must be deterministic: same `o
 - Repeat rebuild deterministic.
 - Headless.
 
-Orbit/pan frame timing stays with the CAD host (FreeCAD) and the Omarchy contract; not this CLI.
+Orbit/pan frame timing stays with the CAD host (FreeCAD) and the desktop contract; not this CLI.
 
 ## Upstream ask
 

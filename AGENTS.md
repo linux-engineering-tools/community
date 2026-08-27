@@ -11,7 +11,7 @@ Public, clean-room requirements and incubation for Linux-native engineering tool
 1. **Capability language.** Describe jobs, inputs, outputs, standards, and tests. Do not specify a clone of a named commercial product, UI, or feature.
 2. **No proprietary IP.** No source, binaries, leaked docs, NDA workflows, commercial UI screenshots, or decompile notes. If an issue has that, stop and apply `ip:flagged`; do not expand on the material.
 3. **Upstream first.** Check [`catalog/README.md`](catalog/README.md) before proposing a new tool.
-4. **Omarchy / Wayland** for any graphical user interface (GUI): Super-key chords are reserved for the compositor. See `agents/skills/omarchy-desktop/SKILL.md`.
+4. **Wayland / keybindings** for any graphical user interface (GUI): native Wayland; shortcuts live in a simple user config file so users can avoid OS conflicts. Defaults use Ctrl / Shift / Alt. See `agents/skills/omarchy-desktop/SKILL.md`.
 5. **Stay on engineering.** Do not add political, ideological, or identity language to docs, issues, or commit messages.
 6. **Developer Certificate of Origin (DCO).** Commits need `Signed-off-by: Full Name <email>`.
 7. **Terms.** First mention in a document uses the expanded form; [`TERMS.md`](TERMS.md) is the legend.

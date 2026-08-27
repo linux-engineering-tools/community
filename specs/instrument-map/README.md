@@ -71,7 +71,7 @@ The map is data (YAML or JSON) generated or hand-maintained. Do not scrape vendo
 - Fixture VID:PID from a documented sigrok device → names `sigrok-cli` or PulseView as appropriate.
 - Fixture `*IDN?` string for an LXI-class example → `lxi` or PyVISA invocation.
 - Unknown id: exit 3, empty `matches`.
-- Headless; no Super-key GUI.
+- Headless; no GUI.
 
 ## Upstream
 
