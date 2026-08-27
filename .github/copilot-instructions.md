@@ -1,1 +1,1 @@
-Follow `AGENTS.md` at the repository root. Open one skill under `agents/skills/` for the task. Do not duplicate those files here. Capability language only; no proprietary IP; upstream first; Omarchy/Wayland for GUIs; DCO on commits.
+Follow `AGENTS.md` at the repository root. Open one skill under `agents/skills/` for the task. Do not duplicate those files here. Capability language only; no proprietary IP; upstream first; Wayland and remappable keybindings for GUIs; DCO on commits.

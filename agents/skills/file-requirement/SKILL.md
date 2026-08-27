@@ -15,7 +15,7 @@ Required substance (map to form fields):
 - **Inputs/outputs/standards** — published specs (ISO 10303 STEP, Drawing Exchange Format (DXF), ISO geometrical product specifications (GPS), ASME Y14.5, IPC, G-code dialect). Not vendor-internal formats.
 - **Acceptance tests** — observable, preferably command-line interface (CLI) + fixtures (in-tree sample files).
 - **Existing free and open-source software (FOSS)** — from `catalog/README.md`. Say whether this should go **upstream**.
-- **Graphical user interface (GUI)?** — if yes, the Omarchy desktop contract applies (`agents/skills/omarchy-desktop/SKILL.md`) before incubation.
+- **Graphical user interface (GUI)?** — if yes, the desktop contract applies (`agents/skills/omarchy-desktop/SKILL.md`) before incubation.
 
 Title: `[req] ` plus the job in a few words.
 

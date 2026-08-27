@@ -51,7 +51,7 @@ These jobs should land in the named projects unless they decline.
 
 | Job | Likely home | LET issue | Stage |
 |---|---|---|---|
-| Omarchy / Wayland GUI contract | Each GUI project; LET spec | #1 | needs-spec ([spec](specs/omarchy-desktop/)) |
+| Wayland GUI contract (remappable keybindings) | Each GUI project; LET spec | #1 | needs-spec ([spec](specs/omarchy-desktop/)) |
 | Stable parametric assemblies | FreeCAD | #2 | upstream-first |
 | Manufacturing drawings (ISO GPS / ASME Y14.5) | FreeCAD TechDraw | #3 | upstream-first |
 | 3-axis mill / turning toolpaths | FreeCAD CAM | #4 | upstream-first |
@@ -93,7 +93,7 @@ Native Linux GUIs do not yet match high-fidelity parametric BIM or advanced surf
 
 - **Open interchange** (STEP, IFC, Gerber/IPC-2581) as the professional bar, not vendor binary editability (`.rvt`, `.pln`, `.adb`, `.nxasm`).
 - Wine/Proton as a **compatibility footnote**, never as “head-start OSS.”
-- New GUIs only with the Omarchy / Wayland contract (`agents/skills/omarchy-desktop/SKILL.md`, [`specs/omarchy-desktop/`](specs/omarchy-desktop/)).
+- New GUIs only with the desktop contract: Wayland, plus a user-editable keybinding file (`agents/skills/omarchy-desktop/SKILL.md`, [`specs/omarchy-desktop/`](specs/omarchy-desktop/)).
 
 ## Sequence
 

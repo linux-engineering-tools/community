@@ -19,7 +19,7 @@ Drafts. **No org repo until RFC + maintainer decision.** `let-interop` is past t
 
 | Spec | Job | Requirement | RFC |
 |---|---|---|---|
-| [`omarchy-desktop/`](omarchy-desktop/) | Wayland / Omarchy GUI contract | #1 | — (not a tool) |
+| [`omarchy-desktop/`](omarchy-desktop/) | Wayland GUI contract (remappable keybindings) | #1 | — (not a tool) |
 | [`geometry-harness/`](geometry-harness/) | Open CASCADE Technology (OCCT) / FreeCAD operation reliability tests | #6 | — (upstream-first) |
 | [`let-interop/`](let-interop/) | Open-format round-trip harness ([repo](https://github.com/linux-engineering-tools/let-interop)) | #8, #14, #15 | #21 (incubating) |
 | [`let-solver-pipe/`](let-solver-pipe/) | CLI prepare/inspect pipeline over existing solvers | #7 | #22 |

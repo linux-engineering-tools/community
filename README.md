@@ -43,13 +43,13 @@ Talk in [Discussions](https://github.com/linux-engineering-tools/community/discu
 | Process / chemical | domain `process` | [catalog/process.md](catalog/process.md) |
 | Automation / control | domain `automation` | [catalog/automation.md](catalog/automation.md) |
 | Scientific / biomedical | domain `scientific` | [catalog/scientific.md](catalog/scientific.md) |
-| Desktop (Omarchy / Wayland) | domain `desktop` | [catalog/desktop.md](catalog/desktop.md) |
+| Desktop (Wayland) | domain `desktop` | [catalog/desktop.md](catalog/desktop.md) |
 
 Research-backed fan-out (head-start vs upstream vs possible incubation): [`ROADMAP.md`](ROADMAP.md).
 
 ## Desktop target
 
-Graphical user interface (GUI) tools must work as native [Wayland](https://wayland.freedesktop.org/) apps on [Omarchy](https://omarchy.org/) (a Linux desktop that uses the Hyprland compositor). Super-key chords (the logo key) belong to the compositor. See [`agents/skills/omarchy-desktop/SKILL.md`](agents/skills/omarchy-desktop/SKILL.md).
+Graphical user interface (GUI) tools must work as native [Wayland](https://wayland.freedesktop.org/) apps. [Omarchy](https://omarchy.org/) (Hyprland) is a test desktop. Shortcuts live in a simple user config file, the same idea as Omarchy's bindings file, so users can avoid conflicts with their operating system. Defaults use Ctrl / Shift / Alt. See [`agents/skills/omarchy-desktop/SKILL.md`](agents/skills/omarchy-desktop/SKILL.md).
 
 ## License
 

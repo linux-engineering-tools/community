@@ -1,43 +1,36 @@
 ---
 name: omarchy-desktop
-description: Omarchy/Hyprland desktop contract for LET GUIs. Use when adding shortcuts, Wayland support, window rules, HiDPI, or any graphical tool; when Super-key bindings are proposed; or when the user runs /omarchy-desktop.
+description: Use when adding shortcuts, Wayland support, window rules, HiDPI, or any graphical tool; when a keybinding config or Super-key binding is proposed; or when the user runs /omarchy-desktop.
 ---
 
 # Omarchy desktop contract
 
-GUI tools in this organization must work as **native Wayland** apps on [Omarchy](https://omarchy.org/) (Hyprland). An X11-only or “disable the compositor Super key” path is a defect.
+GUI tools in this organization must work as **native Wayland** apps. [Omarchy](https://omarchy.org/) (Hyprland) is a test desktop. An X11-only path is a defect. Telling the user to disable their compositor Super key is a defect. A closed, non-editable shortcut map is a defect.
 
-Full contract: issue labeled `platform:omarchy` and [`specs/omarchy-desktop/`](../../../specs/omarchy-desktop/). Do not copy that issue into this skill.
+Full contract: issue labeled `platform:omarchy` and [`specs/omarchy-desktop/`](../../../specs/omarchy-desktop/). Do not copy that spec into this skill.
 
-## Super is the compositor’s key
+## Keybindings belong to the user
 
-Default in-app chords use **Ctrl / Shift / Alt**. Do not bind Super (or Super+anything) unless the user rebinds it themselves.
+Ship a small user-editable config file (text or JSON). Omarchy's `~/.config/hypr/bindings.lua` is the example of that style, not a chord list other apps must copy.
 
-Do not ship defaults that collide with Omarchy’s map. At minimum, leave these to the compositor:
+Default in-app chords use **Ctrl / Shift / Alt**. Do not bind Super unless the user rebinds it themselves. If a default collides with their OS, they edit the file.
 
-- Super+Space (menus), Super+Return and Shift/Alt/Ctrl+Return (terminal / browser / tmux / Herdr)
-- Super+W close, Super+F fullscreen, Super+T float, Super+O pop-out, Super+P pseudo, Super+J split
-- Super+C / V / X clipboard, Super+Ctrl+V clipboard manager
-- Super+K keybinding help, Super+1–0 and Super+Tab workspaces, Super+S scratchpad
-- Super+Shift+Ctrl+A agent picker
-- Print and Super+Print family (capture / color / OCR)
-- Super+comma notifications, Super+Escape system menu, Super+Ctrl+L lock
+Every shortcut must be user-rebindable. Print the map (`keymap` or `keymap --json`) and the config path.
 
-Save/undo/fit-view in engineering apps: **Ctrl+S**, **Ctrl+Z**, and a fit-view chord that is **not** Super+F.
-
-Every shortcut must be user-rebindable. Ship a printed map (`--help` or a `keymap` subcommand).
+Save/undo/fit-view: **Ctrl+S**, **Ctrl+Z**, and a fit-view chord that is not Super+F.
 
 ## Do
 
-- Wayland-native; test on Omarchy
-- In-app shortcuts only — never global/compositor grabs
+- Wayland-native; test on Omarchy when you can
+- In-app shortcuts only. Never global or compositor grabs
 - Follow session color-scheme and scale (HiDPI)
 - Provide a **CLI for every action** an agent or script needs; GUI is not the only path
-- Optional Hyprland window rules as a **snippet the user can paste**. Never write the user’s `~/.config/hypr/bindings.lua` for them
+- Optional Hyprland window rules as a **snippet the user can paste**. Never write the user's compositor config
 
 ## Do not
 
-- Overwrite Omarchy user config
+- Overwrite desktop or compositor user config
 - Require X11
 - Bind Super by default
+- Treat Omarchy's Super map as the contract
 - Treat Wine as the supported Linux path

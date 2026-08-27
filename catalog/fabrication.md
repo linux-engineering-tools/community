@@ -42,4 +42,4 @@ CAMotics is a simulator, not a toolpath generator.
 | [Mainsail](https://docs.mainsail.xyz/) / [Fluidd](https://docs.fluidd.xyz/) | Printer web UI |
 | [OctoPrint](https://octoprint.org/) | Printer host |
 
-Slicers and Klipper are the default homes. LET requirements should be **jobs** (CAD solid → slice with named profile, Omarchy-friendly host UI, open G-code dialect tests), not a new slicer.
+Slicers and Klipper are the default homes. LET requirements should be **jobs** (CAD solid → slice with named profile, Wayland host UI with remappable keys, open G-code dialect tests), not a new slicer.
