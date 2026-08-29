@@ -32,8 +32,8 @@ Track on catalog pages. File LET issues only for **unmet jobs**.
 |---|---|---|
 | Mechanical CAD | FreeCAD, SolveSpace, OpenSCAD, CadQuery, OpenCASCADE | [`catalog/mechanical.md`](catalog/mechanical.md) |
 | Mesh / viz | Gmsh, Netgen, VTK, ParaView, Blender (mesh, not solids) | mechanical + [`catalog/simulation.md`](catalog/simulation.md) |
-| FEA | CalculiX, Code_Aster, Elmer | simulation |
-| CFD | OpenFOAM, SU2 | simulation |
+| FEA | CalculiX, Code_Aster, SALOME, Elmer | simulation |
+| CFD | OpenFOAM Foundation, OpenFOAM OpenCFD, SU2 | simulation |
 | Electronics (tier 1) | KiCad, Horizon EDA, LibrePCB, ngspice, Yosys, GHDL, Verilator, xschem, openEMS | [`catalog/electronics.md`](catalog/electronics.md) |
 | GIS / environment | QGIS, PDAL, GDAL | [`catalog/civil.md`](catalog/civil.md) |
 | Process / kinetics | DWSIM, COCO, Cantera | [`catalog/process.md`](catalog/process.md) |
@@ -97,7 +97,7 @@ Native Linux GUIs do not yet match high-fidelity parametric BIM or advanced surf
 
 ## Sequence
 
-1. Expand the catalog so “does it exist?” is answered in-repo. **Done** (including data, desktop, CAM sim, kernels).
+1. Expand the catalog so “does it exist?” is answered in-repo. **Done** (including data, desktop, CAM sim, kernels). Forge and Display columns, GitLab/Kitware/ONELAB/Savannah scan list, SALOME, and the two OpenFOAM trees: [`catalog/README.md`](catalog/README.md).
 2. File remaining **requirements** in capability language. **Done** (#14–#20). Stop filing more until these are triaged.
 3. Write public **specs** for glue we might own (`let-interop`, `let-solver-pipe`) plus #1 / #6 / #10. **Drafts in `specs/`.**
 4. **Ask upstream** using `specs/*/upstream-ask.md`. Record URLs on RFC #21 and #22. **Posted.** IfcOpenShell and FreeCAD FEM replies incorporated in the specs.

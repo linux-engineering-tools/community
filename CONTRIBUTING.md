@@ -13,7 +13,7 @@ Use the **Requirement** issue form. Accepted items show up on the [Requirements 
 - Who needs it and what job they are doing
 - Inputs and outputs, named as **open or published standards** (file formats, ISO/ASME/IEC/IPC numbers, G-code dialects)
 - Observable acceptance tests
-- Existing free and open-source software (FOSS) that almost does it, and why it does not (see [`catalog/README.md`](catalog/README.md))
+- Existing free and open-source software (FOSS) that almost does it, and why it does not (see [`catalog/README.md`](catalog/README.md)). Use the catalog **Forge** URL when you ask that project, not a mirror.
 - Whether this should be an upstream patch or a new tool, and why
 
 ### Do not include
@@ -42,10 +42,12 @@ Flag suspected IP problems with `ip:flagged`. Do not discuss the proprietary mat
 A new LET repo is a last resort. Before incubating:
 
 1. Identify the existing project that should own the work.
-2. Check whether they will take the change (issue, mailing list, or RFC there).
+2. Check whether they will take the change (issue, mailing list, or RFC there). Use the catalog **Forge** URL.
 3. File an LET RFC only if they decline, are dormant, or the work does not belong there.
 
 See [`GOVERNANCE.md`](GOVERNANCE.md) and [`agents/skills/incubate-tool/SKILL.md`](agents/skills/incubate-tool/SKILL.md).
+
+When you add a catalog row: homepage in **Project**, canonical repository in **Forge**, display token in **Display** (`catalog/README.md`). Cite GUI display evidence on [`catalog/desktop.md`](catalog/desktop.md). Scan GitLab groups, Kitware, ONELAB, Savannah, and SourceForge as well as GitHub (`catalog/README.md`, Where to scan). Do not add a commercial-product catalog.
 
 ## Pull requests (this repo)
 

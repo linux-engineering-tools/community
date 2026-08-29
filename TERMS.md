@@ -17,6 +17,7 @@ Linux Engineering Tools (LET) is a **requirements and incubation** board, not a 
 | **Incubate** | Create a new repository under this organization after a spec and an RFC. Last resort. |
 | **Clean room** | Implement from public specs and standards, not from proprietary source, leaked manuals, or decompiled binaries. |
 | **FOSS** | Free and open-source software. |
+| **Forge** | The canonical source repository for a project (GitLab, GitHub, Savannah, and so on). Catalog **Forge** is where patches go, not a mirror. |
 | **DCO** | Developer Certificate of Origin — every commit has `Signed-off-by: Name <email>`. |
 | **Space** | A topic area (Mechanical, Fabrication, …): discussion category + labels. Not a separate GitHub organization. |
 | **Domain** | Fine-grained issue label (`cad`, `print`, `bench`, …). |
@@ -112,6 +113,9 @@ Linux Engineering Tools (LET) is a **requirements and incubation** board, not a 
 | Term | Meaning here |
 |---|---|
 | **Wayland** | Modern Linux display protocol. An **X11-only** path is not the supported Linux path here. |
+| **X11** | The older Linux display protocol. Catalog **Display** `x11` means upstream still treats this as the supported path. |
+| **XWayland** | An X11 server that draws onto a Wayland compositor. Catalog **Display** `xwayland` means the app is not a native Wayland client. |
+| **Display (catalog)** | How a Linux GUI talks to the session: `cli`, `web`, `x11`, `xwayland`, `wayland`, `both`, or `unverified`. Notes, not Omarchy tests. See `catalog/README.md`. |
 | **Omarchy** | Arch Linux desktop distribution using **Hyprland** (a Wayland compositor). A test desktop for LET graphical tools, and the example of simple keybinding config files. |
 | **Super key** | The key often labelled with a logo (Windows / Command / Super). Most Linux desktops already use it. LET defaults use Ctrl / Shift / Alt; users remap via a keybinding file if a chord still collides. |
 | **Keybinding file** | A small user-editable text or JSON file that maps actions to chords. Omarchy's `~/.config/hypr/bindings.lua` is the example of this style. |

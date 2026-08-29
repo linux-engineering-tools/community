@@ -74,7 +74,7 @@ body:
     id: existing
     attributes:
       label: Existing FOSS considered
-      description: What you already tried (see catalog/README.md) and why it does not meet the tests. Prefer upstream contribution when it would.
+      description: What you already tried (see catalog/README.md). Link the catalog Forge URL if you asked that project. Say why it does not meet the tests. Prefer upstream contribution when it would.
     validations:
       required: true
   - type: dropdown
