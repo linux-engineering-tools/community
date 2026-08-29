@@ -19,7 +19,7 @@ LET collects **jobs to be done**, written as capabilities and acceptance tests, 
 
 - A clone of a named commercial product
 - A place to paste proprietary source, UI layouts, leaked manuals, or NDA workflows
-- A fork farm. Existing FOSS is listed in [`catalog/README.md`](catalog/README.md); contribute there first
+- A fork farm. Existing FOSS is listed in [`catalog/README.md`](catalog/README.md) (homepage, canonical forge, X11/Wayland note); contribute there first
 - A political project. Docs cover conduct, process, and engineering. Nothing else
 
 ## How to participate

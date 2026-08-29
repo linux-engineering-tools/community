@@ -11,7 +11,7 @@ A new repository is a last resort. Do this only after a maintainer decision on a
 
 1. **Requirement** issues exist, in capability language, `ip:clean`
 2. **Public spec** under `specs/<name>/` (problem, standards, CLI, tests, license)
-3. **Upstream check** documented: existing project named, asked, declined or wrong home (see `catalog/README.md`)
+3. **Upstream check** documented: existing project named, asked on its **Forge** URL (see `catalog/README.md`), declined or wrong home
 4. **RFC** issue approved by a maintainer
 5. If GUI: desktop contract in the spec (`agents/skills/omarchy-desktop/SKILL.md`): Wayland plus a user-editable keybinding file
 

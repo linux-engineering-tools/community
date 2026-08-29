@@ -14,14 +14,14 @@ Required substance (map to form fields):
 - **Job** — who, what they are finishing, how often. No commercial feature names.
 - **Inputs/outputs/standards** — published specs (ISO 10303 STEP, Drawing Exchange Format (DXF), ISO geometrical product specifications (GPS), ASME Y14.5, IPC, G-code dialect). Not vendor-internal formats.
 - **Acceptance tests** — observable, preferably command-line interface (CLI) + fixtures (in-tree sample files).
-- **Existing free and open-source software (FOSS)** — from `catalog/README.md`. Say whether this should go **upstream**.
+- **Existing free and open-source software (FOSS)** — from `catalog/README.md`. Say whether this should go **upstream**. File on the catalog **Forge** URL, not a GitHub mirror of GitLab or Savannah.
 - **Graphical user interface (GUI)?** — if yes, the desktop contract applies (`agents/skills/omarchy-desktop/SKILL.md`) before incubation.
 
 Title: `[req] ` plus the job in a few words.
 
 Labels: `type:requirement`, `status:needs-triage`, `domain:<name>`, `ip:clean` if the form checks passed.
 
-Map domain → space with [`SPACES.md`](../../../SPACES.md). Check that space’s catalog page first.
+Map domain → space with [`SPACES.md`](../../../SPACES.md). Check that space’s catalog page first (Forge and Display columns). Display notes are not Omarchy tests.
 
 - `cad` parametric solids; `mesh` polygon/sculpt (not a FreeCAD clone of Blender, not the reverse)
 - `cam` toolpaths; `cnc` machine control; `print` slice/host/firmware

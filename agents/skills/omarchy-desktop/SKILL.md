@@ -7,7 +7,7 @@ description: Use when adding shortcuts, Wayland support, window rules, HiDPI, or
 
 GUI tools in this organization must work as **native Wayland** apps. [Omarchy](https://omarchy.org/) (Hyprland) is a test desktop. An X11-only path is a defect. Telling the user to disable their compositor Super key is a defect. A closed, non-editable shortcut map is a defect.
 
-Full contract: issue labeled `platform:omarchy` and [`specs/omarchy-desktop/`](../../../specs/omarchy-desktop/). Do not copy that spec into this skill.
+Full contract: issue labeled `platform:omarchy` and [`specs/omarchy-desktop/`](../../../specs/omarchy-desktop/). Do not copy that spec into this skill. Existing FOSS display notes live in [`catalog/desktop.md`](../../../catalog/desktop.md). Those are literature, not a waiver of this contract for LET GUIs.
 
 ## Keybindings belong to the user
 

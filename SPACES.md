@@ -34,7 +34,7 @@ Discussion categories already exist for Mechanical, Fabrication, Electronics, Si
 
 `cad` is parametric engineering CAD (feature history and dimensions). `mesh` is polygon/sculpt/subdivision modelling (the Blender-class job). They are not the same requirement. `cam` is computer-aided manufacturing — toolpath generation; `cnc` is talking to the machine (LinuxCNC-class). `print` is slice, host, and printer firmware on Linux.
 
-Catalog pages: [`catalog/README.md`](catalog/README.md). Fan-out plan: [`ROADMAP.md`](ROADMAP.md).
+Catalog pages: [`catalog/README.md`](catalog/README.md) (Forge and Display on each space page). Fan-out plan: [`ROADMAP.md`](ROADMAP.md).
 
 ## Discussions vs issues
 
